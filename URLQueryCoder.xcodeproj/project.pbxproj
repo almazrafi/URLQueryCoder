@@ -1,0 +1,1656 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C006F1C12406B20400C3F783 /* AnyCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EAF323E1E0AE00F12CCB /* AnyCodingKey.swift */; };
+		C006F1C22406B20400C3F783 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */; };
+		C006F1C32406B20400C3F783 /* RangeReplaceableCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EAF223E1E0AE00F12CCB /* RangeReplaceableCollection+Extensions.swift */; };
+		C013EB0F23E1E0AF00F12CCB /* RangeReplaceableCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EAF223E1E0AE00F12CCB /* RangeReplaceableCollection+Extensions.swift */; };
+		C013EB1023E1E0AF00F12CCB /* RangeReplaceableCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EAF223E1E0AE00F12CCB /* RangeReplaceableCollection+Extensions.swift */; };
+		C013EB1123E1E0AF00F12CCB /* RangeReplaceableCollection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EAF223E1E0AE00F12CCB /* RangeReplaceableCollection+Extensions.swift */; };
+		C013EB1223E1E0AF00F12CCB /* AnyCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EAF323E1E0AE00F12CCB /* AnyCodingKey.swift */; };
+		C013EB1323E1E0AF00F12CCB /* AnyCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EAF323E1E0AE00F12CCB /* AnyCodingKey.swift */; };
+		C013EB1423E1E0AF00F12CCB /* AnyCodingKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EAF323E1E0AE00F12CCB /* AnyCodingKey.swift */; };
+		C013EB5B23E1E23B00F12CCB /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */; };
+		C013EB5C23E1E23B00F12CCB /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */; };
+		C013EB5D23E1E23B00F12CCB /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */; };
+		C057F01823CB8EEB00C2D895 /* URLQueryCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C057F00E23CB8EEB00C2D895 /* URLQueryCoder.framework */; };
+		C057F01F23CB8EEB00C2D895 /* URLQueryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C09C107428BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C106F28BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift */; };
+		C09C107528BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C106F28BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift */; };
+		C09C107628BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C106F28BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift */; };
+		C09C107728BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C106F28BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift */; };
+		C09C107828BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107028BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift */; };
+		C09C107928BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107028BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift */; };
+		C09C107A28BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107028BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift */; };
+		C09C107B28BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107028BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift */; };
+		C09C107C28BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107128BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift */; };
+		C09C107D28BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107128BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift */; };
+		C09C107E28BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107128BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift */; };
+		C09C107F28BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107128BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift */; };
+		C09C108028BE49480020E2B3 /* URLQueryDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107228BE49480020E2B3 /* URLQueryDecodingOptions.swift */; };
+		C09C108128BE49480020E2B3 /* URLQueryDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107228BE49480020E2B3 /* URLQueryDecodingOptions.swift */; };
+		C09C108228BE49480020E2B3 /* URLQueryDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107228BE49480020E2B3 /* URLQueryDecodingOptions.swift */; };
+		C09C108328BE49480020E2B3 /* URLQueryDecodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107228BE49480020E2B3 /* URLQueryDecodingOptions.swift */; };
+		C09C108428BE49490020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107328BE49480020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift */; };
+		C09C108528BE49490020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107328BE49480020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift */; };
+		C09C108628BE49490020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107328BE49480020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift */; };
+		C09C108728BE49490020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C107328BE49480020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift */; };
+		C09C108A28BE4D130020E2B3 /* URLQueryValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C108928BE4D130020E2B3 /* URLQueryValue.swift */; };
+		C09C108B28BE4D130020E2B3 /* URLQueryValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C108928BE4D130020E2B3 /* URLQueryValue.swift */; };
+		C09C108C28BE4D130020E2B3 /* URLQueryValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C108928BE4D130020E2B3 /* URLQueryValue.swift */; };
+		C09C108D28BE4D130020E2B3 /* URLQueryValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C108928BE4D130020E2B3 /* URLQueryValue.swift */; };
+		C09C108F28BE4E660020E2B3 /* URLQueryValueDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C108E28BE4E660020E2B3 /* URLQueryValueDecoding.swift */; };
+		C09C109028BE4E660020E2B3 /* URLQueryValueDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C108E28BE4E660020E2B3 /* URLQueryValueDecoding.swift */; };
+		C09C109128BE4E660020E2B3 /* URLQueryValueDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C108E28BE4E660020E2B3 /* URLQueryValueDecoding.swift */; };
+		C09C109228BE4E660020E2B3 /* URLQueryValueDecoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C108E28BE4E660020E2B3 /* URLQueryValueDecoding.swift */; };
+		C09C10A328BE4F630020E2B3 /* URLQueryDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10A228BE4F630020E2B3 /* URLQueryDeserializer.swift */; };
+		C09C10A428BE4F630020E2B3 /* URLQueryDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10A228BE4F630020E2B3 /* URLQueryDeserializer.swift */; };
+		C09C10A528BE4F630020E2B3 /* URLQueryDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10A228BE4F630020E2B3 /* URLQueryDeserializer.swift */; };
+		C09C10A628BE4F630020E2B3 /* URLQueryDeserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10A228BE4F630020E2B3 /* URLQueryDeserializer.swift */; };
+		C09C10A828BE4F9A0020E2B3 /* Character+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10A728BE4F9A0020E2B3 /* Character+Extensions.swift */; };
+		C09C10A928BE4F9A0020E2B3 /* Character+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10A728BE4F9A0020E2B3 /* Character+Extensions.swift */; };
+		C09C10AA28BE4F9A0020E2B3 /* Character+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10A728BE4F9A0020E2B3 /* Character+Extensions.swift */; };
+		C09C10AB28BE4F9A0020E2B3 /* Character+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10A728BE4F9A0020E2B3 /* Character+Extensions.swift */; };
+		C09C10AD28BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10AC28BE4FB50020E2B3 /* Dictionary+Extensions.swift */; };
+		C09C10AE28BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10AC28BE4FB50020E2B3 /* Dictionary+Extensions.swift */; };
+		C09C10AF28BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10AC28BE4FB50020E2B3 /* Dictionary+Extensions.swift */; };
+		C09C10B028BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10AC28BE4FB50020E2B3 /* Dictionary+Extensions.swift */; };
+		C09C10B228BE4FD20020E2B3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10B128BE4FD20020E2B3 /* String+Extensions.swift */; };
+		C09C10B328BE4FD20020E2B3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10B128BE4FD20020E2B3 /* String+Extensions.swift */; };
+		C09C10B428BE4FD20020E2B3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10B128BE4FD20020E2B3 /* String+Extensions.swift */; };
+		C09C10B528BE4FD20020E2B3 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10B128BE4FD20020E2B3 /* String+Extensions.swift */; };
+		C09C10B728BE4FFA0020E2B3 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10B628BE4FFA0020E2B3 /* Collection+Extensions.swift */; };
+		C09C10B828BE4FFA0020E2B3 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10B628BE4FFA0020E2B3 /* Collection+Extensions.swift */; };
+		C09C10B928BE4FFA0020E2B3 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10B628BE4FFA0020E2B3 /* Collection+Extensions.swift */; };
+		C09C10BA28BE4FFA0020E2B3 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10B628BE4FFA0020E2B3 /* Collection+Extensions.swift */; };
+		C09C10C328BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10C028BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift */; };
+		C09C10C428BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10C028BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift */; };
+		C09C10C528BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10C028BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift */; };
+		C09C10C628BE50820020E2B3 /* URLQueryDecoderTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10C128BE50820020E2B3 /* URLQueryDecoderTesting.swift */; };
+		C09C10C728BE50820020E2B3 /* URLQueryDecoderTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10C128BE50820020E2B3 /* URLQueryDecoderTesting.swift */; };
+		C09C10C828BE50820020E2B3 /* URLQueryDecoderTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10C128BE50820020E2B3 /* URLQueryDecoderTesting.swift */; };
+		C09C10C928BE50820020E2B3 /* URLQueryDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10C228BE50820020E2B3 /* URLQueryDecoderTests.swift */; };
+		C09C10CA28BE50820020E2B3 /* URLQueryDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10C228BE50820020E2B3 /* URLQueryDecoderTests.swift */; };
+		C09C10CB28BE50820020E2B3 /* URLQueryDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10C228BE50820020E2B3 /* URLQueryDecoderTests.swift */; };
+		C09C10E128BE51F80020E2B3 /* URLQueryKeyEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CE28BE51F10020E2B3 /* URLQueryKeyEncodingStrategy.swift */; };
+		C09C10E228BE51F80020E2B3 /* URLQueryDateEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10D028BE51F10020E2B3 /* URLQueryDateEncodingStrategy.swift */; };
+		C09C10E328BE51F80020E2B3 /* URLQueryDataEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CD28BE51F10020E2B3 /* URLQueryDataEncodingStrategy.swift */; };
+		C09C10E428BE51F80020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CF28BE51F10020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift */; };
+		C09C10E528BE51F80020E2B3 /* URLQueryEncodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10D128BE51F10020E2B3 /* URLQueryEncodingOptions.swift */; };
+		C09C10E628BE51F90020E2B3 /* URLQueryKeyEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CE28BE51F10020E2B3 /* URLQueryKeyEncodingStrategy.swift */; };
+		C09C10E728BE51F90020E2B3 /* URLQueryDateEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10D028BE51F10020E2B3 /* URLQueryDateEncodingStrategy.swift */; };
+		C09C10E828BE51F90020E2B3 /* URLQueryDataEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CD28BE51F10020E2B3 /* URLQueryDataEncodingStrategy.swift */; };
+		C09C10E928BE51F90020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CF28BE51F10020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift */; };
+		C09C10EA28BE51F90020E2B3 /* URLQueryEncodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10D128BE51F10020E2B3 /* URLQueryEncodingOptions.swift */; };
+		C09C10EB28BE51F90020E2B3 /* URLQueryKeyEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CE28BE51F10020E2B3 /* URLQueryKeyEncodingStrategy.swift */; };
+		C09C10EC28BE51F90020E2B3 /* URLQueryDateEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10D028BE51F10020E2B3 /* URLQueryDateEncodingStrategy.swift */; };
+		C09C10ED28BE51F90020E2B3 /* URLQueryDataEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CD28BE51F10020E2B3 /* URLQueryDataEncodingStrategy.swift */; };
+		C09C10EE28BE51F90020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CF28BE51F10020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift */; };
+		C09C10EF28BE51F90020E2B3 /* URLQueryEncodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10D128BE51F10020E2B3 /* URLQueryEncodingOptions.swift */; };
+		C09C10F028BE51FA0020E2B3 /* URLQueryKeyEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CE28BE51F10020E2B3 /* URLQueryKeyEncodingStrategy.swift */; };
+		C09C10F128BE51FA0020E2B3 /* URLQueryDateEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10D028BE51F10020E2B3 /* URLQueryDateEncodingStrategy.swift */; };
+		C09C10F228BE51FA0020E2B3 /* URLQueryDataEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CD28BE51F10020E2B3 /* URLQueryDataEncodingStrategy.swift */; };
+		C09C10F328BE51FA0020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10CF28BE51F10020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift */; };
+		C09C10F428BE51FA0020E2B3 /* URLQueryEncodingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10D128BE51F10020E2B3 /* URLQueryEncodingOptions.swift */; };
+		C09C10F628BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10F528BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift */; };
+		C09C10F728BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10F528BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift */; };
+		C09C10F828BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10F528BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift */; };
+		C09C10F928BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10F528BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift */; };
+		C09C10FB28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10FA28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift */; };
+		C09C10FC28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10FA28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift */; };
+		C09C10FD28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10FA28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift */; };
+		C09C10FE28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10FA28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift */; };
+		C09C110528BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110428BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift */; };
+		C09C110628BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110428BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift */; };
+		C09C110728BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110428BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift */; };
+		C09C110828BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110428BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift */; };
+		C09C110F28BE72D30020E2B3 /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110E28BE72D30020E2B3 /* TimeZone+Extensions.swift */; };
+		C09C111028BE72D30020E2B3 /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110E28BE72D30020E2B3 /* TimeZone+Extensions.swift */; };
+		C09C111128BE72D30020E2B3 /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110E28BE72D30020E2B3 /* TimeZone+Extensions.swift */; };
+		C09C111228BE72D30020E2B3 /* TimeZone+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110E28BE72D30020E2B3 /* TimeZone+Extensions.swift */; };
+		C09C111D28BE948B0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109828BE4F380020E2B3 /* URLQuerySingleValueDecodingContainer.swift */; };
+		C09C111E28BE948C0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109828BE4F380020E2B3 /* URLQuerySingleValueDecodingContainer.swift */; };
+		C09C111F28BE948C0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109828BE4F380020E2B3 /* URLQuerySingleValueDecodingContainer.swift */; };
+		C09C112028BE948D0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109828BE4F380020E2B3 /* URLQuerySingleValueDecodingContainer.swift */; };
+		C09C112128BE95740020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109D28BE4F530020E2B3 /* URLQueryUnkeyedDecodingContainer.swift */; };
+		C09C112228BE95740020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109D28BE4F530020E2B3 /* URLQueryUnkeyedDecodingContainer.swift */; };
+		C09C112328BE95750020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109D28BE4F530020E2B3 /* URLQueryUnkeyedDecodingContainer.swift */; };
+		C09C112428BE95750020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109D28BE4F530020E2B3 /* URLQueryUnkeyedDecodingContainer.swift */; };
+		C09C112528BE98DA0020E2B3 /* URLQueryKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109328BE4F100020E2B3 /* URLQueryKeyedDecodingContainer.swift */; };
+		C09C112628BE98DA0020E2B3 /* URLQueryKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109328BE4F100020E2B3 /* URLQueryKeyedDecodingContainer.swift */; };
+		C09C112728BE98DB0020E2B3 /* URLQueryKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109328BE4F100020E2B3 /* URLQueryKeyedDecodingContainer.swift */; };
+		C09C112828BE98DB0020E2B3 /* URLQueryKeyedDecodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C109328BE4F100020E2B3 /* URLQueryKeyedDecodingContainer.swift */; };
+		C09C112928BE9B480020E2B3 /* URLQuerySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10FF28BE69420020E2B3 /* URLQuerySerializer.swift */; };
+		C09C112A28BE9B490020E2B3 /* URLQuerySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10FF28BE69420020E2B3 /* URLQuerySerializer.swift */; };
+		C09C112B28BE9B4A0020E2B3 /* URLQuerySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10FF28BE69420020E2B3 /* URLQuerySerializer.swift */; };
+		C09C112C28BE9B4A0020E2B3 /* URLQuerySerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10FF28BE69420020E2B3 /* URLQuerySerializer.swift */; };
+		C09C112D28BE9C740020E2B3 /* URLQueryValueEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110928BE729F0020E2B3 /* URLQueryValueEncoding.swift */; };
+		C09C112E28BE9C750020E2B3 /* URLQueryValueEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110928BE729F0020E2B3 /* URLQueryValueEncoding.swift */; };
+		C09C112F28BE9C750020E2B3 /* URLQueryValueEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110928BE729F0020E2B3 /* URLQueryValueEncoding.swift */; };
+		C09C113028BE9C760020E2B3 /* URLQueryValueEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C110928BE729F0020E2B3 /* URLQueryValueEncoding.swift */; };
+		C09C113128BEA0EE0020E2B3 /* URLQueryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10BB28BE501A0020E2B3 /* URLQueryDecoder.swift */; };
+		C09C113228BEA0EE0020E2B3 /* URLQueryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10BB28BE501A0020E2B3 /* URLQueryDecoder.swift */; };
+		C09C113328BEA0EF0020E2B3 /* URLQueryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10BB28BE501A0020E2B3 /* URLQueryDecoder.swift */; };
+		C09C113428BEA0EF0020E2B3 /* URLQueryDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C10BB28BE501A0020E2B3 /* URLQueryDecoder.swift */; };
+		C09C113628BEA4D30020E2B3 /* URLQueryValueResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C113528BEA4D30020E2B3 /* URLQueryValueResolver.swift */; };
+		C09C113728BEA4D30020E2B3 /* URLQueryValueResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C113528BEA4D30020E2B3 /* URLQueryValueResolver.swift */; };
+		C09C113828BEA4D30020E2B3 /* URLQueryValueResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C113528BEA4D30020E2B3 /* URLQueryValueResolver.swift */; };
+		C09C113928BEA4D30020E2B3 /* URLQueryValueResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C113528BEA4D30020E2B3 /* URLQueryValueResolver.swift */; };
+		C09C113B28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C113A28BEA50E0020E2B3 /* URLQueryValueForm.swift */; };
+		C09C113C28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C113A28BEA50E0020E2B3 /* URLQueryValueForm.swift */; };
+		C09C113D28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C113A28BEA50E0020E2B3 /* URLQueryValueForm.swift */; };
+		C09C113E28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C113A28BEA50E0020E2B3 /* URLQueryValueForm.swift */; };
+		C09C113F28BEA54D0020E2B3 /* URLQuerySingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C111828BE82B70020E2B3 /* URLQuerySingleValueEncodingContainer.swift */; };
+		C09C114128BEA54E0020E2B3 /* URLQuerySingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C111828BE82B70020E2B3 /* URLQuerySingleValueEncodingContainer.swift */; };
+		C09C114228BEA54F0020E2B3 /* URLQuerySingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C111828BE82B70020E2B3 /* URLQuerySingleValueEncodingContainer.swift */; };
+		C09C114328BEA5500020E2B3 /* URLQuerySingleValueEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C111828BE82B70020E2B3 /* URLQuerySingleValueEncodingContainer.swift */; };
+		C09C114528BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114428BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift */; };
+		C09C114628BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114428BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift */; };
+		C09C114728BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114428BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift */; };
+		C09C114828BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114428BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift */; };
+		C09C114A28BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114928BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift */; };
+		C09C114B28BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114928BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift */; };
+		C09C114C28BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114928BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift */; };
+		C09C114D28BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114928BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift */; };
+		C09C114F28BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114E28BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift */; };
+		C09C115028BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114E28BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift */; };
+		C09C115128BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114E28BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift */; };
+		C09C115228BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C114E28BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift */; };
+		C09C115428BEB1CC0020E2B3 /* URLQueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115328BEB1CC0020E2B3 /* URLQueryEncoder.swift */; };
+		C09C115528BEB1CC0020E2B3 /* URLQueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115328BEB1CC0020E2B3 /* URLQueryEncoder.swift */; };
+		C09C115628BEB1CC0020E2B3 /* URLQueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115328BEB1CC0020E2B3 /* URLQueryEncoder.swift */; };
+		C09C115728BEB1CC0020E2B3 /* URLQueryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115328BEB1CC0020E2B3 /* URLQueryEncoder.swift */; };
+		C09C115928BEB5A50020E2B3 /* URLQueryEncoderTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115828BEB5A50020E2B3 /* URLQueryEncoderTesting.swift */; };
+		C09C115A28BEB5A50020E2B3 /* URLQueryEncoderTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115828BEB5A50020E2B3 /* URLQueryEncoderTesting.swift */; };
+		C09C115B28BEB5A50020E2B3 /* URLQueryEncoderTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115828BEB5A50020E2B3 /* URLQueryEncoderTesting.swift */; };
+		C09C115D28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115C28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift */; };
+		C09C115E28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115C28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift */; };
+		C09C115F28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C115C28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift */; };
+		C09C116128BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C116028BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift */; };
+		C09C116228BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C116028BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift */; };
+		C09C116328BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C116028BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift */; };
+		C0A01A3223CB90F200AC2C3A /* URLQueryCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A01A2923CB90F200AC2C3A /* URLQueryCoder.framework */; };
+		C0A01A4123CB912C00AC2C3A /* URLQueryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0A01A5023CB92EB00AC2C3A /* URLQueryCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A01A4723CB92EB00AC2C3A /* URLQueryCoder.framework */; };
+		C0A01A5E23CB92F200AC2C3A /* URLQueryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C057F01923CB8EEB00C2D895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C057F00523CB8EEB00C2D895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C057F00D23CB8EEB00C2D895;
+			remoteInfo = URLQueryCoder;
+		};
+		C0A01A3323CB90F200AC2C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C057F00523CB8EEB00C2D895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0A01A2823CB90F200AC2C3A;
+			remoteInfo = "URLQueryCoder macOS";
+		};
+		C0A01A5123CB92EB00AC2C3A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C057F00523CB8EEB00C2D895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0A01A4623CB92EB00AC2C3A;
+			remoteInfo = "URLQueryCoder tvOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C0007FFA23CBAAA5005F95E0 /* .swift-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".swift-version"; sourceTree = "<group>"; };
+		C006F1A22406B13E00C3F783 /* URLQueryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLQueryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C013EAF223E1E0AE00F12CCB /* RangeReplaceableCollection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RangeReplaceableCollection+Extensions.swift"; sourceTree = "<group>"; };
+		C013EAF323E1E0AE00F12CCB /* AnyCodingKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodingKey.swift; sourceTree = "<group>"; };
+		C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		C057F00E23CB8EEB00C2D895 /* URLQueryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLQueryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLQueryCoder.h; sourceTree = "<group>"; };
+		C057F01223CB8EEB00C2D895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C057F01723CB8EEB00C2D895 /* URLQueryCoder Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URLQueryCoder Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C057F01E23CB8EEB00C2D895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C07811BC2675FD15002FE9D4 /* Mintfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Mintfile; sourceTree = "<group>"; };
+		C09C106F28BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryDataDecodingStrategy.swift; sourceTree = "<group>"; };
+		C09C107028BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryDateDecodingStrategy.swift; sourceTree = "<group>"; };
+		C09C107128BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryKeyDecodingStrategy.swift; sourceTree = "<group>"; };
+		C09C107228BE49480020E2B3 /* URLQueryDecodingOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryDecodingOptions.swift; sourceTree = "<group>"; };
+		C09C107328BE49480020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryNonConformingFloatDecodingStrategy.swift; sourceTree = "<group>"; };
+		C09C108928BE4D130020E2B3 /* URLQueryValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryValue.swift; sourceTree = "<group>"; };
+		C09C108E28BE4E660020E2B3 /* URLQueryValueDecoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryValueDecoding.swift; sourceTree = "<group>"; };
+		C09C109328BE4F100020E2B3 /* URLQueryKeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryKeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		C09C109828BE4F380020E2B3 /* URLQuerySingleValueDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQuerySingleValueDecodingContainer.swift; sourceTree = "<group>"; };
+		C09C109D28BE4F530020E2B3 /* URLQueryUnkeyedDecodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryUnkeyedDecodingContainer.swift; sourceTree = "<group>"; };
+		C09C10A228BE4F630020E2B3 /* URLQueryDeserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryDeserializer.swift; sourceTree = "<group>"; };
+		C09C10A728BE4F9A0020E2B3 /* Character+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Character+Extensions.swift"; sourceTree = "<group>"; };
+		C09C10AC28BE4FB50020E2B3 /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		C09C10B128BE4FD20020E2B3 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		C09C10B628BE4FFA0020E2B3 /* Collection+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
+		C09C10BB28BE501A0020E2B3 /* URLQueryDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryDecoder.swift; sourceTree = "<group>"; };
+		C09C10C028BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryDecoderStrategiesTests.swift; sourceTree = "<group>"; };
+		C09C10C128BE50820020E2B3 /* URLQueryDecoderTesting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryDecoderTesting.swift; sourceTree = "<group>"; };
+		C09C10C228BE50820020E2B3 /* URLQueryDecoderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryDecoderTests.swift; sourceTree = "<group>"; };
+		C09C10CD28BE51F10020E2B3 /* URLQueryDataEncodingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryDataEncodingStrategy.swift; sourceTree = "<group>"; };
+		C09C10CE28BE51F10020E2B3 /* URLQueryKeyEncodingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryKeyEncodingStrategy.swift; sourceTree = "<group>"; };
+		C09C10CF28BE51F10020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryNonConformingFloatEncodingStrategy.swift; sourceTree = "<group>"; };
+		C09C10D028BE51F10020E2B3 /* URLQueryDateEncodingStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryDateEncodingStrategy.swift; sourceTree = "<group>"; };
+		C09C10D128BE51F10020E2B3 /* URLQueryEncodingOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLQueryEncodingOptions.swift; sourceTree = "<group>"; };
+		C09C10F528BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryBoolEncodingStrategy.swift; sourceTree = "<group>"; };
+		C09C10FA28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQuerySpaceEncodingStrategy.swift; sourceTree = "<group>"; };
+		C09C10FF28BE69420020E2B3 /* URLQuerySerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQuerySerializer.swift; sourceTree = "<group>"; };
+		C09C110428BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryArrayEncodingStrategy.swift; sourceTree = "<group>"; };
+		C09C110928BE729F0020E2B3 /* URLQueryValueEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryValueEncoding.swift; sourceTree = "<group>"; };
+		C09C110E28BE72D30020E2B3 /* TimeZone+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeZone+Extensions.swift"; sourceTree = "<group>"; };
+		C09C111828BE82B70020E2B3 /* URLQuerySingleValueEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQuerySingleValueEncodingContainer.swift; sourceTree = "<group>"; };
+		C09C113528BEA4D30020E2B3 /* URLQueryValueResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryValueResolver.swift; sourceTree = "<group>"; };
+		C09C113A28BEA50E0020E2B3 /* URLQueryValueForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryValueForm.swift; sourceTree = "<group>"; };
+		C09C114428BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryUnkeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		C09C114928BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryAnyKeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		C09C114E28BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryKeyedEncodingContainer.swift; sourceTree = "<group>"; };
+		C09C115328BEB1CC0020E2B3 /* URLQueryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoder.swift; sourceTree = "<group>"; };
+		C09C115828BEB5A50020E2B3 /* URLQueryEncoderTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoderTesting.swift; sourceTree = "<group>"; };
+		C09C115C28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoderTests.swift; sourceTree = "<group>"; };
+		C09C116028BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoderStrategiesTests.swift; sourceTree = "<group>"; };
+		C0A01A1423CB8FF300AC2C3A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C0A01A1523CB8FFC00AC2C3A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C0A01A1723CB900900AC2C3A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C0A01A1823CB900900AC2C3A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		C0A01A1923CB900900AC2C3A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C0A01A1A23CB901C00AC2C3A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		C0A01A1B23CB901C00AC2C3A /* .codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .codecov.yml; sourceTree = "<group>"; };
+		C0A01A1C23CB901C00AC2C3A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		C0A01A1D23CB901C00AC2C3A /* .ruby-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
+		C0A01A2923CB90F200AC2C3A /* URLQueryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLQueryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A01A3123CB90F200AC2C3A /* URLQueryCoder Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URLQueryCoder Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A01A4723CB92EB00AC2C3A /* URLQueryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLQueryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A01A4F23CB92EB00AC2C3A /* URLQueryCoder Tests tvOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URLQueryCoder Tests tvOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0A01A6323CB9B0A00AC2C3A /* Scripts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Scripts; sourceTree = "<group>"; };
+		C0A01A6423CB9B1600AC2C3A /* Dangerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Dangerfile; sourceTree = "<group>"; };
+		C0A01A6523CB9B1600AC2C3A /* Gemfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile; sourceTree = "<group>"; };
+		C0D991F528BE452300031CB8 /* URLQueryCoder.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = URLQueryCoder.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C006F19F2406B13E00C3F783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C057F00B23CB8EEB00C2D895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C057F01423CB8EEB00C2D895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C057F01823CB8EEB00C2D895 /* URLQueryCoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A2623CB90F200AC2C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A2E23CB90F200AC2C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A01A3223CB90F200AC2C3A /* URLQueryCoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A4423CB92EB00AC2C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A4C23CB92EB00AC2C3A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A01A5023CB92EB00AC2C3A /* URLQueryCoder.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C013EAF123E1E0AE00F12CCB /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C013EAF323E1E0AE00F12CCB /* AnyCodingKey.swift */,
+				C09C10A728BE4F9A0020E2B3 /* Character+Extensions.swift */,
+				C09C10B628BE4FFA0020E2B3 /* Collection+Extensions.swift */,
+				C09C10AC28BE4FB50020E2B3 /* Dictionary+Extensions.swift */,
+				C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */,
+				C013EAF223E1E0AE00F12CCB /* RangeReplaceableCollection+Extensions.swift */,
+				C09C10B128BE4FD20020E2B3 /* String+Extensions.swift */,
+				C09C110E28BE72D30020E2B3 /* TimeZone+Extensions.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C013EAF423E1E0AE00F12CCB /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				C013EAF723E1E0AE00F12CCB /* Options */,
+				C09C10BB28BE501A0020E2B3 /* URLQueryDecoder.swift */,
+				C09C10A228BE4F630020E2B3 /* URLQueryDeserializer.swift */,
+				C09C109328BE4F100020E2B3 /* URLQueryKeyedDecodingContainer.swift */,
+				C09C109828BE4F380020E2B3 /* URLQuerySingleValueDecodingContainer.swift */,
+				C09C109D28BE4F530020E2B3 /* URLQueryUnkeyedDecodingContainer.swift */,
+				C09C108E28BE4E660020E2B3 /* URLQueryValueDecoding.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		C013EAF723E1E0AE00F12CCB /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				C09C106F28BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift */,
+				C09C107028BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift */,
+				C09C107228BE49480020E2B3 /* URLQueryDecodingOptions.swift */,
+				C09C107128BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift */,
+				C09C107328BE49480020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+		C013EB0023E1E0AF00F12CCB /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				C09C10CC28BE50CA0020E2B3 /* Options */,
+				C09C114928BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift */,
+				C09C114E28BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift */,
+				C09C10FF28BE69420020E2B3 /* URLQuerySerializer.swift */,
+				C09C111828BE82B70020E2B3 /* URLQuerySingleValueEncodingContainer.swift */,
+				C09C114428BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift */,
+				C09C110928BE729F0020E2B3 /* URLQueryValueEncoding.swift */,
+				C09C113A28BEA50E0020E2B3 /* URLQueryValueForm.swift */,
+				C09C115328BEB1CC0020E2B3 /* URLQueryEncoder.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		C013EB8823E2237500F12CCB /* Decoder */ = {
+			isa = PBXGroup;
+			children = (
+				C09C10C028BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift */,
+				C09C10C128BE50820020E2B3 /* URLQueryDecoderTesting.swift */,
+				C09C10C228BE50820020E2B3 /* URLQueryDecoderTests.swift */,
+			);
+			path = Decoder;
+			sourceTree = "<group>";
+		};
+		C013EB8923E2237D00F12CCB /* Encoder */ = {
+			isa = PBXGroup;
+			children = (
+				C09C116028BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift */,
+				C09C115828BEB5A50020E2B3 /* URLQueryEncoderTesting.swift */,
+				C09C115C28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift */,
+			);
+			path = Encoder;
+			sourceTree = "<group>";
+		};
+		C057F00423CB8EEB00C2D895 = {
+			isa = PBXGroup;
+			children = (
+				C057F01023CB8EEB00C2D895 /* Sources */,
+				C057F01B23CB8EEB00C2D895 /* Tests */,
+				C057F00F23CB8EEB00C2D895 /* Products */,
+				C0A01A6323CB9B0A00AC2C3A /* Scripts */,
+				C0A01A1B23CB901C00AC2C3A /* .codecov.yml */,
+				C0A01A1A23CB901C00AC2C3A /* .gitignore */,
+				C0A01A1D23CB901C00AC2C3A /* .ruby-version */,
+				C0007FFA23CBAAA5005F95E0 /* .swift-version */,
+				C0A01A1C23CB901C00AC2C3A /* .swiftlint.yml */,
+				C0A01A6423CB9B1600AC2C3A /* Dangerfile */,
+				C0A01A6523CB9B1600AC2C3A /* Gemfile */,
+				C07811BC2675FD15002FE9D4 /* Mintfile */,
+				C0A01A1923CB900900AC2C3A /* LICENSE */,
+				C0A01A1823CB900900AC2C3A /* Package.swift */,
+				C0A01A1723CB900900AC2C3A /* README.md */,
+				C0D991F528BE452300031CB8 /* URLQueryCoder.podspec */,
+			);
+			sourceTree = "<group>";
+		};
+		C057F00F23CB8EEB00C2D895 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C057F00E23CB8EEB00C2D895 /* URLQueryCoder.framework */,
+				C057F01723CB8EEB00C2D895 /* URLQueryCoder Tests iOS.xctest */,
+				C0A01A2923CB90F200AC2C3A /* URLQueryCoder.framework */,
+				C0A01A3123CB90F200AC2C3A /* URLQueryCoder Tests macOS.xctest */,
+				C0A01A4723CB92EB00AC2C3A /* URLQueryCoder.framework */,
+				C0A01A4F23CB92EB00AC2C3A /* URLQueryCoder Tests tvOS.xctest */,
+				C006F1A22406B13E00C3F783 /* URLQueryCoder.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C057F01023CB8EEB00C2D895 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C013EAF423E1E0AE00F12CCB /* Decoder */,
+				C013EB0023E1E0AF00F12CCB /* Encoder */,
+				C013EAF123E1E0AE00F12CCB /* Tools */,
+				C09C108828BE4D0C0020E2B3 /* Value */,
+				C0A01A1423CB8FF300AC2C3A /* .swiftlint.yml */,
+				C057F01223CB8EEB00C2D895 /* Info.plist */,
+				C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		C057F01B23CB8EEB00C2D895 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C013EB8823E2237500F12CCB /* Decoder */,
+				C013EB8923E2237D00F12CCB /* Encoder */,
+				C0A01A1523CB8FFC00AC2C3A /* .swiftlint.yml */,
+				C057F01E23CB8EEB00C2D895 /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		C09C108828BE4D0C0020E2B3 /* Value */ = {
+			isa = PBXGroup;
+			children = (
+				C09C108928BE4D130020E2B3 /* URLQueryValue.swift */,
+				C09C113528BEA4D30020E2B3 /* URLQueryValueResolver.swift */,
+			);
+			path = Value;
+			sourceTree = "<group>";
+		};
+		C09C10CC28BE50CA0020E2B3 /* Options */ = {
+			isa = PBXGroup;
+			children = (
+				C09C110428BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift */,
+				C09C10F528BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift */,
+				C09C10CD28BE51F10020E2B3 /* URLQueryDataEncodingStrategy.swift */,
+				C09C10D028BE51F10020E2B3 /* URLQueryDateEncodingStrategy.swift */,
+				C09C10D128BE51F10020E2B3 /* URLQueryEncodingOptions.swift */,
+				C09C10CE28BE51F10020E2B3 /* URLQueryKeyEncodingStrategy.swift */,
+				C09C10CF28BE51F10020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift */,
+				C09C10FA28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift */,
+			);
+			path = Options;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C006F19D2406B13E00C3F783 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C057F00923CB8EEB00C2D895 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C057F01F23CB8EEB00C2D895 /* URLQueryCoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A2423CB90F200AC2C3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A01A4123CB912C00AC2C3A /* URLQueryCoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A4223CB92EB00AC2C3A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0A01A5E23CB92F200AC2C3A /* URLQueryCoder.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		C006F1A12406B13E00C3F783 /* URLQueryCoder watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C006F1A92406B13E00C3F783 /* Build configuration list for PBXNativeTarget "URLQueryCoder watchOS" */;
+			buildPhases = (
+				C006F1C42406B21000C3F783 /* SwiftLint */,
+				C006F19D2406B13E00C3F783 /* Headers */,
+				C006F19E2406B13E00C3F783 /* Sources */,
+				C006F19F2406B13E00C3F783 /* Frameworks */,
+				C006F1A02406B13E00C3F783 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "URLQueryCoder watchOS";
+			productName = "URLQueryCoder watchOS";
+			productReference = C006F1A22406B13E00C3F783 /* URLQueryCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C057F00D23CB8EEB00C2D895 /* URLQueryCoder iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C057F02223CB8EEB00C2D895 /* Build configuration list for PBXNativeTarget "URLQueryCoder iOS" */;
+			buildPhases = (
+				C0A01A2323CB907300AC2C3A /* SwiftLint */,
+				C057F00923CB8EEB00C2D895 /* Headers */,
+				C057F00A23CB8EEB00C2D895 /* Sources */,
+				C057F00B23CB8EEB00C2D895 /* Frameworks */,
+				C057F00C23CB8EEB00C2D895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "URLQueryCoder iOS";
+			productName = URLQueryCoder;
+			productReference = C057F00E23CB8EEB00C2D895 /* URLQueryCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C057F01623CB8EEB00C2D895 /* URLQueryCoder Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C057F02523CB8EEB00C2D895 /* Build configuration list for PBXNativeTarget "URLQueryCoder Tests iOS" */;
+			buildPhases = (
+				C057F01323CB8EEB00C2D895 /* Sources */,
+				C057F01423CB8EEB00C2D895 /* Frameworks */,
+				C057F01523CB8EEB00C2D895 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C057F01A23CB8EEB00C2D895 /* PBXTargetDependency */,
+			);
+			name = "URLQueryCoder Tests iOS";
+			productName = URLQueryCoderTests;
+			productReference = C057F01723CB8EEB00C2D895 /* URLQueryCoder Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0A01A2823CB90F200AC2C3A /* URLQueryCoder macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A01A3A23CB90F200AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder macOS" */;
+			buildPhases = (
+				C0A01A6123CB931500AC2C3A /* SwiftLint */,
+				C0A01A2423CB90F200AC2C3A /* Headers */,
+				C0A01A2523CB90F200AC2C3A /* Sources */,
+				C0A01A2623CB90F200AC2C3A /* Frameworks */,
+				C0A01A2723CB90F200AC2C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "URLQueryCoder macOS";
+			productName = "URLQueryCoder macOS";
+			productReference = C0A01A2923CB90F200AC2C3A /* URLQueryCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0A01A3023CB90F200AC2C3A /* URLQueryCoder Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A01A3D23CB90F200AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder Tests macOS" */;
+			buildPhases = (
+				C0A01A2D23CB90F200AC2C3A /* Sources */,
+				C0A01A2E23CB90F200AC2C3A /* Frameworks */,
+				C0A01A2F23CB90F200AC2C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0A01A3423CB90F200AC2C3A /* PBXTargetDependency */,
+			);
+			name = "URLQueryCoder Tests macOS";
+			productName = "URLQueryCoder macOSTests";
+			productReference = C0A01A3123CB90F200AC2C3A /* URLQueryCoder Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C0A01A4623CB92EB00AC2C3A /* URLQueryCoder tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A01A5823CB92EB00AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder tvOS" */;
+			buildPhases = (
+				C0A01A6223CB932700AC2C3A /* SwiftLint */,
+				C0A01A4223CB92EB00AC2C3A /* Headers */,
+				C0A01A4323CB92EB00AC2C3A /* Sources */,
+				C0A01A4423CB92EB00AC2C3A /* Frameworks */,
+				C0A01A4523CB92EB00AC2C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "URLQueryCoder tvOS";
+			productName = "URLQueryCoder tvOS";
+			productReference = C0A01A4723CB92EB00AC2C3A /* URLQueryCoder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C0A01A4E23CB92EB00AC2C3A /* URLQueryCoder Tests tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0A01A5B23CB92EB00AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder Tests tvOS" */;
+			buildPhases = (
+				C0A01A4B23CB92EB00AC2C3A /* Sources */,
+				C0A01A4C23CB92EB00AC2C3A /* Frameworks */,
+				C0A01A4D23CB92EB00AC2C3A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0A01A5223CB92EB00AC2C3A /* PBXTargetDependency */,
+			);
+			name = "URLQueryCoder Tests tvOS";
+			productName = "URLQueryCoder tvOSTests";
+			productReference = C0A01A4F23CB92EB00AC2C3A /* URLQueryCoder Tests tvOS.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C057F00523CB8EEB00C2D895 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1340;
+				ORGANIZATIONNAME = "Almaz Ibragimov";
+				TargetAttributes = {
+					C006F1A12406B13E00C3F783 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					C057F00D23CB8EEB00C2D895 = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					C057F01623CB8EEB00C2D895 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C0A01A2823CB90F200AC2C3A = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					C0A01A3023CB90F200AC2C3A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					C0A01A4623CB92EB00AC2C3A = {
+						CreatedOnToolsVersion = 11.3;
+						LastSwiftMigration = 1130;
+					};
+					C0A01A4E23CB92EB00AC2C3A = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = C057F00823CB8EEB00C2D895 /* Build configuration list for PBXProject "URLQueryCoder" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C057F00423CB8EEB00C2D895;
+			productRefGroup = C057F00F23CB8EEB00C2D895 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C057F00D23CB8EEB00C2D895 /* URLQueryCoder iOS */,
+				C0A01A2823CB90F200AC2C3A /* URLQueryCoder macOS */,
+				C0A01A4623CB92EB00AC2C3A /* URLQueryCoder tvOS */,
+				C006F1A12406B13E00C3F783 /* URLQueryCoder watchOS */,
+				C057F01623CB8EEB00C2D895 /* URLQueryCoder Tests iOS */,
+				C0A01A3023CB90F200AC2C3A /* URLQueryCoder Tests macOS */,
+				C0A01A4E23CB92EB00AC2C3A /* URLQueryCoder Tests tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C006F1A02406B13E00C3F783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C057F00C23CB8EEB00C2D895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C057F01523CB8EEB00C2D895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A2723CB90F200AC2C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A2F23CB90F200AC2C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A4523CB92EB00AC2C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A4D23CB92EB00AC2C3A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C006F1C42406B21000C3F783 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Scripts/swiftlint.sh\n";
+		};
+		C0A01A2323CB907300AC2C3A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Scripts/swiftlint.sh\n";
+		};
+		C0A01A6123CB931500AC2C3A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Scripts/swiftlint.sh\n";
+		};
+		C0A01A6223CB932700AC2C3A /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Scripts/swiftlint.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C006F19E2406B13E00C3F783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C006F1C22406B20400C3F783 /* Optional+Extensions.swift in Sources */,
+				C09C107F28BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift in Sources */,
+				C09C10F928BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift in Sources */,
+				C006F1C12406B20400C3F783 /* AnyCodingKey.swift in Sources */,
+				C09C115228BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift in Sources */,
+				C09C10E528BE51F80020E2B3 /* URLQueryEncodingOptions.swift in Sources */,
+				C09C10E428BE51F80020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift in Sources */,
+				C09C10E328BE51F80020E2B3 /* URLQueryDataEncodingStrategy.swift in Sources */,
+				C09C10AB28BE4F9A0020E2B3 /* Character+Extensions.swift in Sources */,
+				C09C112828BE98DB0020E2B3 /* URLQueryKeyedDecodingContainer.swift in Sources */,
+				C09C10E228BE51F80020E2B3 /* URLQueryDateEncodingStrategy.swift in Sources */,
+				C006F1C32406B20400C3F783 /* RangeReplaceableCollection+Extensions.swift in Sources */,
+				C09C108328BE49480020E2B3 /* URLQueryDecodingOptions.swift in Sources */,
+				C09C113E28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */,
+				C09C112428BE95750020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */,
+				C09C10B028BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */,
+				C09C112028BE948D0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */,
+				C09C109228BE4E660020E2B3 /* URLQueryValueDecoding.swift in Sources */,
+				C09C108D28BE4D130020E2B3 /* URLQueryValue.swift in Sources */,
+				C09C115728BEB1CC0020E2B3 /* URLQueryEncoder.swift in Sources */,
+				C09C113028BE9C760020E2B3 /* URLQueryValueEncoding.swift in Sources */,
+				C09C10E128BE51F80020E2B3 /* URLQueryKeyEncodingStrategy.swift in Sources */,
+				C09C107B28BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */,
+				C09C10B528BE4FD20020E2B3 /* String+Extensions.swift in Sources */,
+				C09C113928BEA4D30020E2B3 /* URLQueryValueResolver.swift in Sources */,
+				C09C113328BEA0EF0020E2B3 /* URLQueryDecoder.swift in Sources */,
+				C09C114D28BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift in Sources */,
+				C09C111228BE72D30020E2B3 /* TimeZone+Extensions.swift in Sources */,
+				C09C108728BE49490020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift in Sources */,
+				C09C112C28BE9B4A0020E2B3 /* URLQuerySerializer.swift in Sources */,
+				C09C10A628BE4F630020E2B3 /* URLQueryDeserializer.swift in Sources */,
+				C09C114328BEA5500020E2B3 /* URLQuerySingleValueEncodingContainer.swift in Sources */,
+				C09C114828BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift in Sources */,
+				C09C107728BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */,
+				C09C110828BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift in Sources */,
+				C09C10BA28BE4FFA0020E2B3 /* Collection+Extensions.swift in Sources */,
+				C09C10FE28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C057F00A23CB8EEB00C2D895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09C107C28BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift in Sources */,
+				C013EB5B23E1E23B00F12CCB /* Optional+Extensions.swift in Sources */,
+				C09C10F628BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift in Sources */,
+				C013EB1223E1E0AF00F12CCB /* AnyCodingKey.swift in Sources */,
+				C09C114F28BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift in Sources */,
+				C09C10F428BE51FA0020E2B3 /* URLQueryEncodingOptions.swift in Sources */,
+				C09C10F328BE51FA0020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift in Sources */,
+				C09C10F228BE51FA0020E2B3 /* URLQueryDataEncodingStrategy.swift in Sources */,
+				C09C10A828BE4F9A0020E2B3 /* Character+Extensions.swift in Sources */,
+				C09C112528BE98DA0020E2B3 /* URLQueryKeyedDecodingContainer.swift in Sources */,
+				C09C10F128BE51FA0020E2B3 /* URLQueryDateEncodingStrategy.swift in Sources */,
+				C09C108F28BE4E660020E2B3 /* URLQueryValueDecoding.swift in Sources */,
+				C09C108028BE49480020E2B3 /* URLQueryDecodingOptions.swift in Sources */,
+				C09C113B28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */,
+				C09C112128BE95740020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */,
+				C09C10AD28BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */,
+				C09C111D28BE948B0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */,
+				C09C108A28BE4D130020E2B3 /* URLQueryValue.swift in Sources */,
+				C09C107828BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */,
+				C09C115428BEB1CC0020E2B3 /* URLQueryEncoder.swift in Sources */,
+				C09C112D28BE9C740020E2B3 /* URLQueryValueEncoding.swift in Sources */,
+				C09C10F028BE51FA0020E2B3 /* URLQueryKeyEncodingStrategy.swift in Sources */,
+				C013EB0F23E1E0AF00F12CCB /* RangeReplaceableCollection+Extensions.swift in Sources */,
+				C09C10B228BE4FD20020E2B3 /* String+Extensions.swift in Sources */,
+				C09C113628BEA4D30020E2B3 /* URLQueryValueResolver.swift in Sources */,
+				C09C113428BEA0EF0020E2B3 /* URLQueryDecoder.swift in Sources */,
+				C09C114A28BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift in Sources */,
+				C09C110F28BE72D30020E2B3 /* TimeZone+Extensions.swift in Sources */,
+				C09C108428BE49490020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift in Sources */,
+				C09C112928BE9B480020E2B3 /* URLQuerySerializer.swift in Sources */,
+				C09C10A328BE4F630020E2B3 /* URLQueryDeserializer.swift in Sources */,
+				C09C113F28BEA54D0020E2B3 /* URLQuerySingleValueEncodingContainer.swift in Sources */,
+				C09C114528BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift in Sources */,
+				C09C107428BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */,
+				C09C110528BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift in Sources */,
+				C09C10B728BE4FFA0020E2B3 /* Collection+Extensions.swift in Sources */,
+				C09C10FB28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C057F01323CB8EEB00C2D895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09C116128BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift in Sources */,
+				C09C115D28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift in Sources */,
+				C09C10C328BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift in Sources */,
+				C09C10C928BE50820020E2B3 /* URLQueryDecoderTests.swift in Sources */,
+				C09C115928BEB5A50020E2B3 /* URLQueryEncoderTesting.swift in Sources */,
+				C09C10C628BE50820020E2B3 /* URLQueryDecoderTesting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A2523CB90F200AC2C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09C107D28BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift in Sources */,
+				C013EB5C23E1E23B00F12CCB /* Optional+Extensions.swift in Sources */,
+				C09C10F728BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift in Sources */,
+				C013EB1323E1E0AF00F12CCB /* AnyCodingKey.swift in Sources */,
+				C09C115028BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift in Sources */,
+				C09C10EF28BE51F90020E2B3 /* URLQueryEncodingOptions.swift in Sources */,
+				C09C10EE28BE51F90020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift in Sources */,
+				C09C10ED28BE51F90020E2B3 /* URLQueryDataEncodingStrategy.swift in Sources */,
+				C09C10A928BE4F9A0020E2B3 /* Character+Extensions.swift in Sources */,
+				C09C112628BE98DA0020E2B3 /* URLQueryKeyedDecodingContainer.swift in Sources */,
+				C09C10EC28BE51F90020E2B3 /* URLQueryDateEncodingStrategy.swift in Sources */,
+				C09C109028BE4E660020E2B3 /* URLQueryValueDecoding.swift in Sources */,
+				C09C108128BE49480020E2B3 /* URLQueryDecodingOptions.swift in Sources */,
+				C09C113C28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */,
+				C09C112228BE95740020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */,
+				C09C10AE28BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */,
+				C09C111E28BE948C0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */,
+				C09C108B28BE4D130020E2B3 /* URLQueryValue.swift in Sources */,
+				C09C107928BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */,
+				C09C115528BEB1CC0020E2B3 /* URLQueryEncoder.swift in Sources */,
+				C09C112E28BE9C750020E2B3 /* URLQueryValueEncoding.swift in Sources */,
+				C09C10EB28BE51F90020E2B3 /* URLQueryKeyEncodingStrategy.swift in Sources */,
+				C013EB1023E1E0AF00F12CCB /* RangeReplaceableCollection+Extensions.swift in Sources */,
+				C09C10B328BE4FD20020E2B3 /* String+Extensions.swift in Sources */,
+				C09C113728BEA4D30020E2B3 /* URLQueryValueResolver.swift in Sources */,
+				C09C113128BEA0EE0020E2B3 /* URLQueryDecoder.swift in Sources */,
+				C09C114B28BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift in Sources */,
+				C09C111028BE72D30020E2B3 /* TimeZone+Extensions.swift in Sources */,
+				C09C108528BE49490020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift in Sources */,
+				C09C112A28BE9B490020E2B3 /* URLQuerySerializer.swift in Sources */,
+				C09C10A428BE4F630020E2B3 /* URLQueryDeserializer.swift in Sources */,
+				C09C114128BEA54E0020E2B3 /* URLQuerySingleValueEncodingContainer.swift in Sources */,
+				C09C114628BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift in Sources */,
+				C09C107528BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */,
+				C09C110628BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift in Sources */,
+				C09C10B828BE4FFA0020E2B3 /* Collection+Extensions.swift in Sources */,
+				C09C10FC28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A2D23CB90F200AC2C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09C116228BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift in Sources */,
+				C09C115E28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift in Sources */,
+				C09C10C428BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift in Sources */,
+				C09C10CA28BE50820020E2B3 /* URLQueryDecoderTests.swift in Sources */,
+				C09C115A28BEB5A50020E2B3 /* URLQueryEncoderTesting.swift in Sources */,
+				C09C10C728BE50820020E2B3 /* URLQueryDecoderTesting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A4323CB92EB00AC2C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09C107E28BE49480020E2B3 /* URLQueryKeyDecodingStrategy.swift in Sources */,
+				C013EB5D23E1E23B00F12CCB /* Optional+Extensions.swift in Sources */,
+				C09C10F828BE66DD0020E2B3 /* URLQueryBoolEncodingStrategy.swift in Sources */,
+				C013EB1423E1E0AF00F12CCB /* AnyCodingKey.swift in Sources */,
+				C09C115128BEB0E40020E2B3 /* URLQueryKeyedEncodingContainer.swift in Sources */,
+				C09C10EA28BE51F90020E2B3 /* URLQueryEncodingOptions.swift in Sources */,
+				C09C10E928BE51F90020E2B3 /* URLQueryNonConformingFloatEncodingStrategy.swift in Sources */,
+				C09C10E828BE51F90020E2B3 /* URLQueryDataEncodingStrategy.swift in Sources */,
+				C09C10AA28BE4F9A0020E2B3 /* Character+Extensions.swift in Sources */,
+				C09C112728BE98DB0020E2B3 /* URLQueryKeyedDecodingContainer.swift in Sources */,
+				C09C10E728BE51F90020E2B3 /* URLQueryDateEncodingStrategy.swift in Sources */,
+				C09C109128BE4E660020E2B3 /* URLQueryValueDecoding.swift in Sources */,
+				C09C108228BE49480020E2B3 /* URLQueryDecodingOptions.swift in Sources */,
+				C09C113D28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */,
+				C09C112328BE95750020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */,
+				C09C10AF28BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */,
+				C09C111F28BE948C0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */,
+				C09C108C28BE4D130020E2B3 /* URLQueryValue.swift in Sources */,
+				C09C107A28BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */,
+				C09C115628BEB1CC0020E2B3 /* URLQueryEncoder.swift in Sources */,
+				C09C112F28BE9C750020E2B3 /* URLQueryValueEncoding.swift in Sources */,
+				C09C10E628BE51F90020E2B3 /* URLQueryKeyEncodingStrategy.swift in Sources */,
+				C013EB1123E1E0AF00F12CCB /* RangeReplaceableCollection+Extensions.swift in Sources */,
+				C09C10B428BE4FD20020E2B3 /* String+Extensions.swift in Sources */,
+				C09C113828BEA4D30020E2B3 /* URLQueryValueResolver.swift in Sources */,
+				C09C113228BEA0EE0020E2B3 /* URLQueryDecoder.swift in Sources */,
+				C09C114C28BEAF8C0020E2B3 /* URLQueryAnyKeyedEncodingContainer.swift in Sources */,
+				C09C111128BE72D30020E2B3 /* TimeZone+Extensions.swift in Sources */,
+				C09C108628BE49490020E2B3 /* URLQueryNonConformingFloatDecodingStrategy.swift in Sources */,
+				C09C112B28BE9B4A0020E2B3 /* URLQuerySerializer.swift in Sources */,
+				C09C10A528BE4F630020E2B3 /* URLQueryDeserializer.swift in Sources */,
+				C09C114228BEA54F0020E2B3 /* URLQuerySingleValueEncodingContainer.swift in Sources */,
+				C09C114728BEAC070020E2B3 /* URLQueryUnkeyedEncodingContainer.swift in Sources */,
+				C09C107628BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */,
+				C09C110728BE6C400020E2B3 /* URLQueryArrayEncodingStrategy.swift in Sources */,
+				C09C10B928BE4FFA0020E2B3 /* Collection+Extensions.swift in Sources */,
+				C09C10FD28BE66F40020E2B3 /* URLQuerySpaceEncodingStrategy.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A01A4B23CB92EB00AC2C3A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C09C116328BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift in Sources */,
+				C09C115F28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift in Sources */,
+				C09C10C528BE50820020E2B3 /* URLQueryDecoderStrategiesTests.swift in Sources */,
+				C09C10CB28BE50820020E2B3 /* URLQueryDecoderTests.swift in Sources */,
+				C09C115B28BEB5A50020E2B3 /* URLQueryEncoderTesting.swift in Sources */,
+				C09C10C828BE50820020E2B3 /* URLQueryDecoderTesting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C057F01A23CB8EEB00C2D895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C057F00D23CB8EEB00C2D895 /* URLQueryCoder iOS */;
+			targetProxy = C057F01923CB8EEB00C2D895 /* PBXContainerItemProxy */;
+		};
+		C0A01A3423CB90F200AC2C3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0A01A2823CB90F200AC2C3A /* URLQueryCoder macOS */;
+			targetProxy = C0A01A3323CB90F200AC2C3A /* PBXContainerItemProxy */;
+		};
+		C0A01A5223CB92EB00AC2C3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0A01A4623CB92EB00AC2C3A /* URLQueryCoder tvOS */;
+			targetProxy = C0A01A5123CB92EB00AC2C3A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C006F1A72406B13E00C3F783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
+				PRODUCT_NAME = URLQueryCoder;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 4;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C006F1A82406B13E00C3F783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
+				PRODUCT_NAME = URLQueryCoder;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 4;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		C057F02023CB8EEB00C2D895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C057F02123CB8EEB00C2D895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C057F02323CB8EEB00C2D895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
+				PRODUCT_NAME = URLQueryCoder;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C057F02423CB8EEB00C2D895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
+				PRODUCT_NAME = URLQueryCoder;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		C057F02623CB8EEB00C2D895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.URLQueryCoder.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C057F02723CB8EEB00C2D895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.URLQueryCoder.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		C0A01A3B23CB90F200AC2C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
+				PRODUCT_NAME = URLQueryCoder;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.1;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C0A01A3C23CB90F200AC2C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
+				PRODUCT_NAME = URLQueryCoder;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.1;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		C0A01A3E23CB90F200AC2C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.URLQueryCoder.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.1;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C0A01A3F23CB90F200AC2C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.URLQueryCoder.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.1;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		C0A01A5923CB92EB00AC2C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
+				PRODUCT_NAME = URLQueryCoder;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C0A01A5A23CB92EB00AC2C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Sources/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
+				PRODUCT_NAME = URLQueryCoder;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		C0A01A5C23CB92EB00AC2C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.URLQueryCoder.Tests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		C0A01A5D23CB92EB00AC2C3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.almazrafi.URLQueryCoder.Tests-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.1;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C006F1A92406B13E00C3F783 /* Build configuration list for PBXNativeTarget "URLQueryCoder watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C006F1A72406B13E00C3F783 /* Debug */,
+				C006F1A82406B13E00C3F783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C057F00823CB8EEB00C2D895 /* Build configuration list for PBXProject "URLQueryCoder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C057F02023CB8EEB00C2D895 /* Debug */,
+				C057F02123CB8EEB00C2D895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C057F02223CB8EEB00C2D895 /* Build configuration list for PBXNativeTarget "URLQueryCoder iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C057F02323CB8EEB00C2D895 /* Debug */,
+				C057F02423CB8EEB00C2D895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C057F02523CB8EEB00C2D895 /* Build configuration list for PBXNativeTarget "URLQueryCoder Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C057F02623CB8EEB00C2D895 /* Debug */,
+				C057F02723CB8EEB00C2D895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A01A3A23CB90F200AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A01A3B23CB90F200AC2C3A /* Debug */,
+				C0A01A3C23CB90F200AC2C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A01A3D23CB90F200AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A01A3E23CB90F200AC2C3A /* Debug */,
+				C0A01A3F23CB90F200AC2C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A01A5823CB92EB00AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A01A5923CB92EB00AC2C3A /* Debug */,
+				C0A01A5A23CB92EB00AC2C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0A01A5B23CB92EB00AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder Tests tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0A01A5C23CB92EB00AC2C3A /* Debug */,
+				C0A01A5D23CB92EB00AC2C3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C057F00523CB8EEB00C2D895 /* Project object */;
+}
