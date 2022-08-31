@@ -1,10 +1,10 @@
 # URLQueryCoder
 [![Build Status](https://github.com/almazrafi/URLQueryCoder/workflows/CI/badge.svg?branch=main)](https://github.com/almazrafi/URLQueryCoder/actions)
 [![Codecov](https://codecov.io/gh/almazrafi/URLQueryCoder/branch/main/graph/badge.svg?token=DRFk9RWXWB)](https://codecov.io/gh/almazrafi/URLQueryCoder)
-[![Cocoapods](https://img.shields.io/cocoapods/v/URLQueryCoder.svg?style=flat)](http://cocoapods.org/pods/URLQueryCoder)
+[![Cocoapods](https://img.shields.io/cocoapods/v/URLQueryCoder)](http://cocoapods.org/pods/URLQueryCoder)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
-[![Platforms](https://img.shields.io/cocoapods/p/URLQueryCoder.svg?style=flat)](https://developer.apple.com/discover/)
+[![Platforms](https://img.shields.io/cocoapods/p/URLQueryCoder)](https://developer.apple.com/discover/)
 [![Xcode](https://img.shields.io/badge/Xcode-11-blue.svg)](https://developer.apple.com/xcode)
 [![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)](https://swift.org)
 [![License](https://img.shields.io/github/license/almazrafi/URLQueryCoder)](https://opensource.org/licenses/MIT)
