@@ -34,14 +34,18 @@ internal final class URLQueryDeserializer {
     }
 
     private func deserializeStringValue(
-        _ fragmentValue: Substring,
+        _ value: Substring?,
         path: [String]
-    ) throws -> URLQueryValue {
-        guard let decodedValue = fragmentValue.removingPercentEncoding else {
+    ) throws -> URLQueryValue? {
+        guard let value = value else {
+            return nil
+        }
+
+        guard let decodedValue = value.removingPercentEncoding else {
             throw DecodingError.dataCorrupted(
                 DecodingError.Context(
                     codingPath: [],
-                    debugDescription: "Unable to remove percent encoding for '\(fragmentValue)'."
+                    debugDescription: "Unable to remove percent encoding for '\(value)' at the '\(path)' key."
                 )
             )
         }
@@ -50,7 +54,7 @@ internal final class URLQueryDeserializer {
     }
 
     private func deserializeArrayValue(
-        _ fragmentValue: Substring,
+        _ value: Substring?,
         at keyIndex: Int,
         of path: [String],
         for array: [Int: URLQueryValue]
@@ -66,53 +70,41 @@ internal final class URLQueryDeserializer {
             throw DecodingError.dataCorrupted(context)
         }
 
-        let array = array.updatingValue(
-            try deserializeValue(
-                fragmentValue,
-                at: keyIndex + 1,
-                of: path,
-                for: array[index]
-            ),
-            forKey: index
-        )
+        guard let value = try deserializeValue(value, at: keyIndex + 1, of: path, for: array[index]) else {
+            return .array(array)
+        }
 
-        return .array(array)
+        return .array(array.updatingValue(value, forKey: index))
     }
 
     private func deserializeDictionaryValue(
-        _ fragmentValue: Substring,
+        _ value: Substring?,
         at keyIndex: Int,
         of path: [String],
         for dictionary: [String: URLQueryValue]
     ) throws -> URLQueryValue {
         let key = path[keyIndex]
 
-        let dictionary = dictionary.updatingValue(
-            try deserializeValue(
-                fragmentValue,
-                at: keyIndex + 1,
-                of: path,
-                for: dictionary[key]
-            ),
-            forKey: key
-        )
+        guard let value = try deserializeValue(value, at: keyIndex + 1, of: path, for: dictionary[key]) else {
+            return .dictionary(dictionary)
+        }
 
-        return .dictionary(dictionary)
+        return .dictionary(dictionary.updatingValue(value, forKey: key))
     }
 
     private func deserializeValue(
-        _ fragmentValue: Substring,
+        _ value: Substring?,
         at keyIndex: Int,
         of path: [String],
-        for value: URLQueryValue?
-    ) throws -> URLQueryValue {
-        switch value {
+        for component: URLQueryValue?
+    ) throws -> URLQueryValue? {
+        switch component {
         case nil where keyIndex >= path.count:
-            return try deserializeStringValue(fragmentValue, path: path)
+            return try deserializeStringValue(value, path: path)
 
         case nil where path[keyIndex].isEmpty || Int(path[keyIndex]) != nil:
             return try deserializeArrayValue(
-                fragmentValue,
+                value,
                 at: keyIndex,
                 of: path,
                 for: [:]
@@ -120,7 +112,7 @@ internal final class URLQueryDeserializer {
 
         case nil:
             return try deserializeDictionaryValue(
-                fragmentValue,
+                value,
                 at: keyIndex,
                 of: path,
                 for: [:]
@@ -128,7 +120,7 @@ internal final class URLQueryDeserializer {
 
         case .array(let array) where keyIndex < path.count:
             return try deserializeArrayValue(
-                fragmentValue,
+                value,
                 at: keyIndex,
                 of: path,
                 for: array
@@ -136,7 +128,7 @@ internal final class URLQueryDeserializer {
 
         case .dictionary(let dictionary) where keyIndex < path.count:
             return try deserializeDictionaryValue(
-                fragmentValue,
+                value,
                 at: keyIndex,
                 of: path,
                 for: dictionary
@@ -154,8 +146,8 @@ internal final class URLQueryDeserializer {
 
     private func deserializeFragment(
         _ fragment: Substring,
-        for value: URLQueryValue?
-    ) throws -> URLQueryValue {
+        for query: URLQueryValue?
+    ) throws -> URLQueryValue? {
         let keyValue = fragment.split(
             separator: .equals,
             maxSplits: 1,
@@ -163,21 +155,13 @@ internal final class URLQueryDeserializer {
         )
 
         let path = try deserializeKey(keyValue[0])
-
-        guard let fragmentValue = keyValue[safe: 1] else {
-            let context = DecodingError.Context(
-                codingPath: [],
-                debugDescription: "Value for key '\(path)' is missing or invalid."
-            )
-
-            throw DecodingError.dataCorrupted(context)
-        }
+        let value = keyValue[safe: 1]
 
         return try deserializeValue(
-            fragmentValue,
+            value,
             at: .zero,
             of: path,
-            for: value
+            for: query
         )
     }
 
