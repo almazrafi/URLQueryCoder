@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "URLQueryCoder"
-  spec.version = "1.0.1"
+  spec.version = "1.1.0"
   spec.summary = "Swift Encoder and Decoder for URL query"
 
   spec.homepage = "https://github.com/almazrafi/URLQueryCoder"

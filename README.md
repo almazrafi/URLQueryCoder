@@ -61,7 +61,7 @@ $ brew install carthage
 
 To integrate URLQueryCoder into your Xcode project using Carthage, specify it in your `Cartfile`:
 ``` ogdl
-github "almazrafi/URLQueryCoder" ~> 1.0.1
+github "almazrafi/URLQueryCoder" ~> 1.1.0
 ```
 
 Finally run `carthage update` to build the framework and drag the built `URLQueryCoder.framework` into your Xcode project.
@@ -72,7 +72,7 @@ The [Swift Package Manager](https://swift.org/package-manager/) is a tool for ma
 To integrate URLQueryCoder into your Xcode project using Swift Package Manager,
 add the following as a dependency to your `Package.swift`:
 ``` swift
-.package(url: "https://github.com/almazrafi/URLQueryCoder.git", from: "1.0.1")
+.package(url: "https://github.com/almazrafi/URLQueryCoder.git", from: "1.1.0")
 ```
 and then specify `"URLQueryCoder"` as a dependency of the Target in which you wish to use URLQueryCoder.
 
@@ -87,7 +87,7 @@ let package = Package(
         .library(name: "MyPackage", targets: ["MyPackage"])
     ],
     dependencies: [
-        .package(url: "https://github.com/almazrafi/URLQueryCoder.git", from: "1.0.1")
+        .package(url: "https://github.com/almazrafi/URLQueryCoder.git", from: "1.1.0")
     ],
     targets: [
         .target(name: "MyPackage", dependencies: ["URLQueryCoder"])
