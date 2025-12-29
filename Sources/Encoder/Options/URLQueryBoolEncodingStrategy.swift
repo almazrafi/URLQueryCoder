@@ -1,6 +1,6 @@
 import Foundation
 
-public enum URLQueryBoolEncodingStrategy {
+public enum URLQueryBoolEncodingStrategy: Sendable {
 
     case numeric
     case literal

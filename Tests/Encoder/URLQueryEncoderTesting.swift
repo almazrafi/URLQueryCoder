@@ -11,7 +11,7 @@ extension URLQueryEncoderTesting {
     func assertEncoderSucceeds<T: Encodable>(
         encoding value: T,
         expecting expectedQuery: String,
-        file: StaticString = #file,
+        file: StaticString = #filePath,
         line: UInt = #line
     ) {
         let expectedQueryComponents = expectedQuery
@@ -38,7 +38,7 @@ extension URLQueryEncoderTesting {
 
     func assertEncoderFails<T: Encodable>(
         encoding value: T,
-        file: StaticString = #file,
+        file: StaticString = #filePath,
         line: UInt = #line,
         errorValidation: (_ error: Error) -> Bool
     ) {

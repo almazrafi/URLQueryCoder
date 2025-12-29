@@ -1,39 +1,60 @@
 import Foundation
 
-public struct URLQueryDecoder {
+public final class URLQueryDecoder: Sendable {
 
     public static let `default` = URLQueryDecoder()
 
-    public var dateDecodingStrategy: URLQueryDateDecodingStrategy
-    public var dataDecodingStrategy: URLQueryDataDecodingStrategy
-    public var nonConformingFloatDecodingStrategy: URLQueryNonConformingFloatDecodingStrategy
-    public var keyDecodingStrategy: URLQueryKeyDecodingStrategy
-    public var userInfo: [CodingUserInfoKey: Any]
+    private let optionsMutex: Mutex<URLQueryDecodingOptions>
+    private let userInfoMutex: Mutex<[CodingUserInfoKey: Sendable]>
+
+    public var dateDecodingStrategy: URLQueryDateDecodingStrategy {
+        get { optionsMutex.withLock { $0.dateDecodingStrategy } }
+        set { optionsMutex.withLock { $0.dateDecodingStrategy = newValue } }
+    }
+
+    public var dataDecodingStrategy: URLQueryDataDecodingStrategy {
+        get { optionsMutex.withLock { $0.dataDecodingStrategy } }
+        set { optionsMutex.withLock { $0.dataDecodingStrategy = newValue } }
+    }
+
+    public var nonConformingFloatDecodingStrategy: URLQueryNonConformingFloatDecodingStrategy {
+        get { optionsMutex.withLock { $0.nonConformingFloatDecodingStrategy } }
+        set { optionsMutex.withLock { $0.nonConformingFloatDecodingStrategy = newValue } }
+    }
+
+    public var keyDecodingStrategy: URLQueryKeyDecodingStrategy {
+        get { optionsMutex.withLock { $0.keyDecodingStrategy } }
+        set { optionsMutex.withLock { $0.keyDecodingStrategy = newValue } }
+    }
+
+    public var userInfo: [CodingUserInfoKey: Sendable] {
+        get { userInfoMutex.withLock { $0 } }
+        set { userInfoMutex.withLock { $0 = newValue } }
+    }
 
     public init(
         dateDecodingStrategy: URLQueryDateDecodingStrategy = .deferredToDate,
         dataDecodingStrategy: URLQueryDataDecodingStrategy = .base64,
         nonConformingFloatDecodingStrategy: URLQueryNonConformingFloatDecodingStrategy = .throw,
         keyDecodingStrategy: URLQueryKeyDecodingStrategy = .useDefaultKeys,
-        userInfo: [CodingUserInfoKey: Any] = [:]
+        userInfo: [CodingUserInfoKey: Sendable] = [:]
     ) {
-        self.dateDecodingStrategy = dateDecodingStrategy
-        self.dataDecodingStrategy = dataDecodingStrategy
-        self.nonConformingFloatDecodingStrategy = nonConformingFloatDecodingStrategy
-        self.keyDecodingStrategy = keyDecodingStrategy
-        self.userInfo = userInfo
-    }
-
-    public func decode<T: Decodable>(
-        _ type: T.Type,
-        from query: String
-    ) throws -> T {
         let options = URLQueryDecodingOptions(
             dateDecodingStrategy: dateDecodingStrategy,
             dataDecodingStrategy: dataDecodingStrategy,
             nonConformingFloatDecodingStrategy: nonConformingFloatDecodingStrategy,
             keyDecodingStrategy: keyDecodingStrategy
         )
+
+        self.optionsMutex = Mutex(value: options)
+        self.userInfoMutex = Mutex(value: userInfo)
+    }
+
+    public func decode<T: Decodable>(
+        _ type: T.Type,
+        from query: String
+    ) throws -> T {
+        let options = optionsMutex.withLock { $0 }
 
         let deserializer = URLQueryDeserializer()
         let value = try deserializer.deserialize(query)

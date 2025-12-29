@@ -1,6 +1,6 @@
 import Foundation
 
-public enum URLQuerySpaceEncodingStrategy {
+public enum URLQuerySpaceEncodingStrategy: Sendable {
 
     case percentEscaped
     case plusReplaced

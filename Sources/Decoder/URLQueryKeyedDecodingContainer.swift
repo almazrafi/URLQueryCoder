@@ -46,14 +46,12 @@ internal final class URLQueryKeyedDecodingContainer<Key: CodingKey>: URLQueryVal
     }
 
     private func superDecoder(forAnyKey key: CodingKey) throws -> Decoder {
-        let decoder = URLQuerySingleValueDecodingContainer(
+        URLQuerySingleValueDecodingContainer(
             value: dictionary[key.stringValue],
             options: options,
             userInfo: userInfo,
             codingPath: codingPath.appending(key)
         )
-
-        return decoder
     }
 }
 
@@ -151,9 +149,9 @@ extension URLQueryKeyedDecodingContainer: KeyedDecodingContainerProtocol {
     }
 }
 
-private extension DecodingError {
+extension DecodingError {
 
-    static func invalidValue<Key: CodingKey>(
+    fileprivate static func invalidValue<Key: CodingKey>(
         _ value: Any?,
         forKey key: Key,
         at codingPath: [CodingKey],
