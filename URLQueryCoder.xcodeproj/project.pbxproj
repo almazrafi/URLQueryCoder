@@ -19,8 +19,15 @@
 		C013EB5B23E1E23B00F12CCB /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */; };
 		C013EB5C23E1E23B00F12CCB /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */; };
 		C013EB5D23E1E23B00F12CCB /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */; };
+		C0153AFF2F02AF3600A7322E /* MutexStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0153AFD2F02AF3600A7322E /* MutexStorage.swift */; };
+		C0153B002F02AF3600A7322E /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0153AFC2F02AF3600A7322E /* Mutex.swift */; };
+		C0153B012F02AF3600A7322E /* MutexStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0153AFD2F02AF3600A7322E /* MutexStorage.swift */; };
+		C0153B022F02AF3600A7322E /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0153AFC2F02AF3600A7322E /* Mutex.swift */; };
+		C0153B032F02AF3600A7322E /* MutexStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0153AFD2F02AF3600A7322E /* MutexStorage.swift */; };
+		C0153B042F02AF3600A7322E /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0153AFC2F02AF3600A7322E /* Mutex.swift */; };
+		C0153B052F02AF3600A7322E /* MutexStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0153AFD2F02AF3600A7322E /* MutexStorage.swift */; };
+		C0153B062F02AF3600A7322E /* Mutex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0153AFC2F02AF3600A7322E /* Mutex.swift */; };
 		C057F01823CB8EEB00C2D895 /* URLQueryCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C057F00E23CB8EEB00C2D895 /* URLQueryCoder.framework */; };
-		C057F01F23CB8EEB00C2D895 /* URLQueryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C09C107428BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C106F28BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift */; };
 		C09C107528BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C106F28BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift */; };
 		C09C107628BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C106F28BE49480020E2B3 /* URLQueryDataDecodingStrategy.swift */; };
@@ -176,9 +183,7 @@
 		C09C116228BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C116028BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift */; };
 		C09C116328BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C09C116028BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift */; };
 		C0A01A3223CB90F200AC2C3A /* URLQueryCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A01A2923CB90F200AC2C3A /* URLQueryCoder.framework */; };
-		C0A01A4123CB912C00AC2C3A /* URLQueryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C0A01A5023CB92EB00AC2C3A /* URLQueryCoder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0A01A4723CB92EB00AC2C3A /* URLQueryCoder.framework */; };
-		C0A01A5E23CB92F200AC2C3A /* URLQueryCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,8 +216,14 @@
 		C013EAF223E1E0AE00F12CCB /* RangeReplaceableCollection+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RangeReplaceableCollection+Extensions.swift"; sourceTree = "<group>"; };
 		C013EAF323E1E0AE00F12CCB /* AnyCodingKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnyCodingKey.swift; sourceTree = "<group>"; };
 		C013EB5A23E1E23B00F12CCB /* Optional+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
+		C0153AF72F02AD6600A7322E /* .system-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".system-version"; sourceTree = "<group>"; };
+		C0153AF82F02AD6600A7322E /* .xcode-runtime-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".xcode-runtime-version"; sourceTree = "<group>"; };
+		C0153AF92F02AD6600A7322E /* .xcode-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".xcode-version"; sourceTree = "<group>"; };
+		C0153AFA2F02AD6600A7322E /* Gemfile.lock */ = {isa = PBXFileReference; lastKnownFileType = text; path = Gemfile.lock; sourceTree = "<group>"; };
+		C0153AFB2F02AD6600A7322E /* Package@swift-5.9.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Package@swift-5.9.swift"; sourceTree = "<group>"; };
+		C0153AFC2F02AF3600A7322E /* Mutex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mutex.swift; sourceTree = "<group>"; };
+		C0153AFD2F02AF3600A7322E /* MutexStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexStorage.swift; sourceTree = "<group>"; };
 		C057F00E23CB8EEB00C2D895 /* URLQueryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLQueryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLQueryCoder.h; sourceTree = "<group>"; };
 		C057F01223CB8EEB00C2D895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C057F01723CB8EEB00C2D895 /* URLQueryCoder Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "URLQueryCoder Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C057F01E23CB8EEB00C2D895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -257,13 +268,11 @@
 		C09C115828BEB5A50020E2B3 /* URLQueryEncoderTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoderTesting.swift; sourceTree = "<group>"; };
 		C09C115C28BEBB8D0020E2B3 /* URLQueryEncoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoderTests.swift; sourceTree = "<group>"; };
 		C09C116028BECC230020E2B3 /* URLQueryEncoderStrategiesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLQueryEncoderStrategiesTests.swift; sourceTree = "<group>"; };
-		C0A01A1423CB8FF300AC2C3A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C0A01A1523CB8FFC00AC2C3A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C0A01A1723CB900900AC2C3A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C0A01A1823CB900900AC2C3A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		C0A01A1923CB900900AC2C3A /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		C0A01A1A23CB901C00AC2C3A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		C0A01A1B23CB901C00AC2C3A /* .codecov.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .codecov.yml; sourceTree = "<group>"; };
 		C0A01A1C23CB901C00AC2C3A /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		C0A01A1D23CB901C00AC2C3A /* .ruby-version */ = {isa = PBXFileReference; lastKnownFileType = text; path = ".ruby-version"; sourceTree = "<group>"; };
 		C0A01A2923CB90F200AC2C3A /* URLQueryCoder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = URLQueryCoder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -335,6 +344,7 @@
 		C013EAF123E1E0AE00F12CCB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C0153AFE2F02AF3600A7322E /* Mutex */,
 				C013EAF323E1E0AE00F12CCB /* AnyCodingKey.swift */,
 				C09C10A728BE4F9A0020E2B3 /* Character+Extensions.swift */,
 				C09C10B628BE4FFA0020E2B3 /* Collection+Extensions.swift */,
@@ -409,6 +419,15 @@
 			path = Encoder;
 			sourceTree = "<group>";
 		};
+		C0153AFE2F02AF3600A7322E /* Mutex */ = {
+			isa = PBXGroup;
+			children = (
+				C0153AFC2F02AF3600A7322E /* Mutex.swift */,
+				C0153AFD2F02AF3600A7322E /* MutexStorage.swift */,
+			);
+			path = Mutex;
+			sourceTree = "<group>";
+		};
 		C057F00423CB8EEB00C2D895 = {
 			isa = PBXGroup;
 			children = (
@@ -416,16 +435,20 @@
 				C057F01B23CB8EEB00C2D895 /* Tests */,
 				C057F00F23CB8EEB00C2D895 /* Products */,
 				C0A01A6323CB9B0A00AC2C3A /* Scripts */,
-				C0A01A1B23CB901C00AC2C3A /* .codecov.yml */,
 				C0A01A1A23CB901C00AC2C3A /* .gitignore */,
+				C0153AF72F02AD6600A7322E /* .system-version */,
+				C0153AF82F02AD6600A7322E /* .xcode-runtime-version */,
+				C0153AF92F02AD6600A7322E /* .xcode-version */,
 				C0A01A1D23CB901C00AC2C3A /* .ruby-version */,
 				C0007FFA23CBAAA5005F95E0 /* .swift-version */,
 				C0A01A1C23CB901C00AC2C3A /* .swiftlint.yml */,
 				C0A01A6423CB9B1600AC2C3A /* Dangerfile */,
 				C0A01A6523CB9B1600AC2C3A /* Gemfile */,
+				C0153AFA2F02AD6600A7322E /* Gemfile.lock */,
 				C07811BC2675FD15002FE9D4 /* Mintfile */,
 				C0A01A1923CB900900AC2C3A /* LICENSE */,
 				C0A01A1823CB900900AC2C3A /* Package.swift */,
+				C0153AFB2F02AD6600A7322E /* Package@swift-5.9.swift */,
 				C0A01A1723CB900900AC2C3A /* README.md */,
 				C0D991F528BE452300031CB8 /* URLQueryCoder.podspec */,
 			);
@@ -452,9 +475,7 @@
 				C013EB0023E1E0AF00F12CCB /* Encoder */,
 				C013EAF123E1E0AE00F12CCB /* Tools */,
 				C09C108828BE4D0C0020E2B3 /* Value */,
-				C0A01A1423CB8FF300AC2C3A /* .swiftlint.yml */,
 				C057F01223CB8EEB00C2D895 /* Info.plist */,
-				C057F01123CB8EEB00C2D895 /* URLQueryCoder.h */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -496,47 +517,12 @@
 		};
 /* End PBXGroup section */
 
-/* Begin PBXHeadersBuildPhase section */
-		C006F19D2406B13E00C3F783 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C057F00923CB8EEB00C2D895 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C057F01F23CB8EEB00C2D895 /* URLQueryCoder.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0A01A2423CB90F200AC2C3A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0A01A4123CB912C00AC2C3A /* URLQueryCoder.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C0A01A4223CB92EB00AC2C3A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C0A01A5E23CB92F200AC2C3A /* URLQueryCoder.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
 /* Begin PBXNativeTarget section */
 		C006F1A12406B13E00C3F783 /* URLQueryCoder watchOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C006F1A92406B13E00C3F783 /* Build configuration list for PBXNativeTarget "URLQueryCoder watchOS" */;
 			buildPhases = (
 				C006F1C42406B21000C3F783 /* SwiftLint */,
-				C006F19D2406B13E00C3F783 /* Headers */,
 				C006F19E2406B13E00C3F783 /* Sources */,
 				C006F19F2406B13E00C3F783 /* Frameworks */,
 				C006F1A02406B13E00C3F783 /* Resources */,
@@ -555,7 +541,6 @@
 			buildConfigurationList = C057F02223CB8EEB00C2D895 /* Build configuration list for PBXNativeTarget "URLQueryCoder iOS" */;
 			buildPhases = (
 				C0A01A2323CB907300AC2C3A /* SwiftLint */,
-				C057F00923CB8EEB00C2D895 /* Headers */,
 				C057F00A23CB8EEB00C2D895 /* Sources */,
 				C057F00B23CB8EEB00C2D895 /* Frameworks */,
 				C057F00C23CB8EEB00C2D895 /* Resources */,
@@ -592,7 +577,6 @@
 			buildConfigurationList = C0A01A3A23CB90F200AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder macOS" */;
 			buildPhases = (
 				C0A01A6123CB931500AC2C3A /* SwiftLint */,
-				C0A01A2423CB90F200AC2C3A /* Headers */,
 				C0A01A2523CB90F200AC2C3A /* Sources */,
 				C0A01A2623CB90F200AC2C3A /* Frameworks */,
 				C0A01A2723CB90F200AC2C3A /* Resources */,
@@ -629,7 +613,6 @@
 			buildConfigurationList = C0A01A5823CB92EB00AC2C3A /* Build configuration list for PBXNativeTarget "URLQueryCoder tvOS" */;
 			buildPhases = (
 				C0A01A6223CB932700AC2C3A /* SwiftLint */,
-				C0A01A4223CB92EB00AC2C3A /* Headers */,
 				C0A01A4323CB92EB00AC2C3A /* Sources */,
 				C0A01A4423CB92EB00AC2C3A /* Frameworks */,
 				C0A01A4523CB92EB00AC2C3A /* Resources */,
@@ -667,8 +650,9 @@
 		C057F00523CB8EEB00C2D895 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1640;
 				ORGANIZATIONNAME = "Almaz Ibragimov";
 				TargetAttributes = {
 					C006F1A12406B13E00C3F783 = {
@@ -873,6 +857,8 @@
 				C09C113E28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */,
 				C09C112428BE95750020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */,
 				C09C10B028BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */,
+				C0153B032F02AF3600A7322E /* MutexStorage.swift in Sources */,
+				C0153B042F02AF3600A7322E /* Mutex.swift in Sources */,
 				C09C112028BE948D0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */,
 				C09C109228BE4E660020E2B3 /* URLQueryValueDecoding.swift in Sources */,
 				C09C108D28BE4D130020E2B3 /* URLQueryValue.swift in Sources */,
@@ -917,6 +903,8 @@
 				C09C113B28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */,
 				C09C112128BE95740020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */,
 				C09C10AD28BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */,
+				C0153AFF2F02AF3600A7322E /* MutexStorage.swift in Sources */,
+				C0153B002F02AF3600A7322E /* Mutex.swift in Sources */,
 				C09C111D28BE948B0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */,
 				C09C108A28BE4D130020E2B3 /* URLQueryValue.swift in Sources */,
 				C09C107828BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */,
@@ -974,6 +962,8 @@
 				C09C113C28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */,
 				C09C112228BE95740020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */,
 				C09C10AE28BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */,
+				C0153B052F02AF3600A7322E /* MutexStorage.swift in Sources */,
+				C0153B062F02AF3600A7322E /* Mutex.swift in Sources */,
 				C09C111E28BE948C0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */,
 				C09C108B28BE4D130020E2B3 /* URLQueryValue.swift in Sources */,
 				C09C107928BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */,
@@ -1031,6 +1021,8 @@
 				C09C113D28BEA50E0020E2B3 /* URLQueryValueForm.swift in Sources */,
 				C09C112328BE95750020E2B3 /* URLQueryUnkeyedDecodingContainer.swift in Sources */,
 				C09C10AF28BE4FB50020E2B3 /* Dictionary+Extensions.swift in Sources */,
+				C0153B012F02AF3600A7322E /* MutexStorage.swift in Sources */,
+				C0153B022F02AF3600A7322E /* Mutex.swift in Sources */,
 				C09C111F28BE948C0020E2B3 /* URLQuerySingleValueDecodingContainer.swift in Sources */,
 				C09C108C28BE4D130020E2B3 /* URLQueryValue.swift in Sources */,
 				C09C107A28BE49480020E2B3 /* URLQueryDateDecodingStrategy.swift in Sources */,
@@ -1099,6 +1091,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1107,6 +1100,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
 				PRODUCT_NAME = URLQueryCoder;
 				SDKROOT = watchos;
@@ -1125,6 +1119,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1133,6 +1128,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
 				PRODUCT_NAME = URLQueryCoder;
 				SDKROOT = watchos;
@@ -1145,6 +1141,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1179,6 +1176,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1193,8 +1191,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1202,11 +1200,11 @@
 				SKIP_SWIFTLINT = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.5;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				SWIFT_VERSION = 6.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Debug;
 		};
@@ -1214,6 +1212,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -1248,6 +1247,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1256,20 +1256,20 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SKIP_SWIFTLINT = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.5;
-				TVOS_DEPLOYMENT_TARGET = 12.0;
+				SWIFT_VERSION = 6.0;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
-				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
 			};
 			name = Release;
 		};
@@ -1284,6 +1284,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1292,6 +1293,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
 				PRODUCT_NAME = URLQueryCoder;
 				SKIP_INSTALL = YES;
@@ -1310,6 +1312,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1318,6 +1321,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
 				PRODUCT_NAME = URLQueryCoder;
 				SKIP_INSTALL = YES;
@@ -1328,7 +1332,6 @@
 		C057F02623CB8EEB00C2D895 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -1346,7 +1349,6 @@
 		C057F02723CB8EEB00C2D895 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -1373,6 +1375,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1381,6 +1384,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
 				PRODUCT_NAME = URLQueryCoder;
 				SDKROOT = macosx;
@@ -1400,6 +1404,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1408,6 +1413,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
 				PRODUCT_NAME = URLQueryCoder;
 				SDKROOT = macosx;
@@ -1418,7 +1424,6 @@
 		C0A01A3E23CB90F200AC2C3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -1437,7 +1442,6 @@
 		C0A01A3F23CB90F200AC2C3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEAD_CODE_STRIPPING = YES;
@@ -1464,6 +1468,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1472,6 +1477,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
 				PRODUCT_NAME = URLQueryCoder;
 				SDKROOT = appletvos;
@@ -1491,6 +1497,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1499,6 +1506,7 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.almazrafi.URLQueryCoder;
 				PRODUCT_NAME = URLQueryCoder;
 				SDKROOT = appletvos;
@@ -1510,7 +1518,6 @@
 		C0A01A5C23CB92EB00AC2C3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -1529,7 +1536,6 @@
 		C0A01A5D23CB92EB00AC2C3A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Tests/Info.plist;

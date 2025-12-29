@@ -2,8 +2,8 @@ import Foundation
 
 internal struct URLQueryDecodingOptions {
 
-    internal let dateDecodingStrategy: URLQueryDateDecodingStrategy
-    internal let dataDecodingStrategy: URLQueryDataDecodingStrategy
-    internal let nonConformingFloatDecodingStrategy: URLQueryNonConformingFloatDecodingStrategy
-    internal let keyDecodingStrategy: URLQueryKeyDecodingStrategy
+    internal var dateDecodingStrategy: URLQueryDateDecodingStrategy
+    internal var dataDecodingStrategy: URLQueryDataDecodingStrategy
+    internal var nonConformingFloatDecodingStrategy: URLQueryNonConformingFloatDecodingStrategy
+    internal var keyDecodingStrategy: URLQueryKeyDecodingStrategy
 }

@@ -276,9 +276,9 @@ extension URLQueryValueDecoding {
     }
 }
 
-private extension DecodingError {
+extension DecodingError {
 
-    static func invalidValue(
+    fileprivate static func invalidValue(
         _ component: URLQueryValue?,
         of type: Any.Type,
         at codingPath: [CodingKey]

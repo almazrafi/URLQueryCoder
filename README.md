@@ -5,14 +5,14 @@
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
 [![SPM compatible](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg?style=flat)](https://swift.org/package-manager/)
 [![Platforms](https://img.shields.io/cocoapods/p/URLQueryCoder)](https://developer.apple.com/discover/)
-[![Xcode](https://img.shields.io/badge/Xcode-13-blue)](https://developer.apple.com/xcode)
-[![Swift](https://img.shields.io/badge/Swift-5.5-orange)](https://swift.org)
+[![Xcode](https://img.shields.io/badge/Xcode-16-blue)](https://developer.apple.com/xcode)
+[![Swift](https://img.shields.io/badge/Swift-5.9-orange)](https://swift.org)
 [![License](https://img.shields.io/github/license/almazrafi/URLQueryCoder)](https://opensource.org/licenses/MIT)
 
 ## Requirements
-- iOS 12.0+ / macOS 10.14+ / watchOS 5.0+ / tvOS 12.0+
-- Xcode 13.0+
-- Swift 5.5+
+- iOS 13.0+ / macOS 11.5+ / watchOS 6.0+ / tvOS 13.0+
+- Xcode 16.4+
+- Swift 5.9+
 
 ## Usage
 ```swift
@@ -31,25 +31,33 @@ let user = try URLQueryDecoder().decode(User.self, from: query)
 ```
 
 ## Installation
-### CocoaPods
-[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
-``` bash
-$ gem install cocoapods
+### Swift Package Manager
+The [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
+
+To integrate URLQueryCoder into your Xcode project using Swift Package Manager,
+add the following as a dependency to your `Package.swift`:
+``` swift
+.package(url: "https://github.com/almazrafi/URLQueryCoder.git", from: "1.1.0")
 ```
+and then specify `"URLQueryCoder"` as a dependency of the Target in which you wish to use URLQueryCoder.
 
-To integrate URLQueryCoder into your Xcode project using [CocoaPods](http://cocoapods.org), specify it in your `Podfile`:
-``` ruby
-platform :ios, '12.0'
-use_frameworks!
+Here's an example `Package.swift`:
+``` swift
+// swift-tools-version:5.9
+import PackageDescription
 
-target '<Your Target Name>' do
-    pod 'URLQueryCoder'
-end
-```
-
-Finally run the following command:
-``` bash
-$ pod install
+let package = Package(
+    name: "MyPackage",
+    products: [
+        .library(name: "MyPackage", targets: ["MyPackage"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/almazrafi/URLQueryCoder.git", from: "1.1.0")
+    ],
+    targets: [
+        .target(name: "MyPackage", dependencies: ["URLQueryCoder"])
+    ]
+)
 ```
 
 ### Carthage
@@ -66,33 +74,25 @@ github "almazrafi/URLQueryCoder" ~> 1.1.0
 
 Finally run `carthage update` to build the framework and drag the built `URLQueryCoder.framework` into your Xcode project.
 
-### Swift Package Manager
-The [Swift Package Manager](https://swift.org/package-manager/) is a tool for managing the distribution of Swift code. It’s integrated with the Swift build system to automate the process of downloading, compiling, and linking dependencies.
-
-To integrate URLQueryCoder into your Xcode project using Swift Package Manager,
-add the following as a dependency to your `Package.swift`:
-``` swift
-.package(url: "https://github.com/almazrafi/URLQueryCoder.git", from: "1.1.0")
+### CocoaPods
+[CocoaPods](http://cocoapods.org) is a dependency manager for Cocoa projects. You can install it with the following command:
+``` bash
+$ gem install cocoapods
 ```
-and then specify `"URLQueryCoder"` as a dependency of the Target in which you wish to use URLQueryCoder.
 
-Here's an example `Package.swift`:
-``` swift
-// swift-tools-version:5.5
-import PackageDescription
+To integrate URLQueryCoder into your Xcode project using [CocoaPods](http://cocoapods.org), specify it in your `Podfile`:
+``` ruby
+platform :ios, '13.0'
+use_frameworks!
 
-let package = Package(
-    name: "MyPackage",
-    products: [
-        .library(name: "MyPackage", targets: ["MyPackage"])
-    ],
-    dependencies: [
-        .package(url: "https://github.com/almazrafi/URLQueryCoder.git", from: "1.1.0")
-    ],
-    targets: [
-        .target(name: "MyPackage", dependencies: ["URLQueryCoder"])
-    ]
-)
+target '<Your Target Name>' do
+    pod 'URLQueryCoder'
+end
+```
+
+Finally run the following command:
+``` bash
+$ pod install
 ```
 
 ## Communication

@@ -214,9 +214,12 @@ extension URLQueryValueEncoding {
     }
 }
 
-private extension EncodingError {
+extension EncodingError {
 
-    static func invalidFloatingPointValue<T: FloatingPoint>(_ value: T, at codingPath: [CodingKey]) -> EncodingError {
+    fileprivate static func invalidFloatingPointValue<T: FloatingPoint>(
+        _ value: T,
+        at codingPath: [CodingKey]
+    ) -> EncodingError {
         let valueDescription: String
 
         switch value {

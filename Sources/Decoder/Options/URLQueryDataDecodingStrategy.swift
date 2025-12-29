@@ -1,7 +1,7 @@
 import Foundation
 
 /// The strategies for decoding raw data.
-public enum URLQueryDataDecodingStrategy {
+public enum URLQueryDataDecodingStrategy: Sendable {
 
     /// The strategy that encodes data using the encoding specified by the data instance itself.
     case deferredToData
@@ -10,5 +10,5 @@ public enum URLQueryDataDecodingStrategy {
     case base64
 
     /// The strategy that decodes data using a user-defined function.
-    case custom((_ decoder: Decoder) throws -> Data)
+    case custom(@Sendable (_ decoder: Decoder) throws -> Data)
 }

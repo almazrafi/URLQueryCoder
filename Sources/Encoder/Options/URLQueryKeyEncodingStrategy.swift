@@ -1,7 +1,7 @@
 import Foundation
 
-public enum URLQueryKeyEncodingStrategy {
+public enum URLQueryKeyEncodingStrategy: Sendable {
 
     case useDefaultKeys
-    case custom((_ codingPath: [CodingKey]) -> CodingKey)
+    case custom(@Sendable (_ codingPath: [CodingKey]) -> CodingKey)
 }

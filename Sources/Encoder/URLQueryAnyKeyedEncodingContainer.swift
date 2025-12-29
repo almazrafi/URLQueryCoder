@@ -36,7 +36,7 @@ internal final class URLQueryAnyKeyedEncodingContainer {
         keyedBy keyType: NestedKey.Type,
         forKey key: Key
     ) -> URLQueryAnyKeyedEncodingContainer {
-        if case let .resolver(container as URLQueryAnyKeyedEncodingContainer) = dictionary[encodeKey(key)] {
+        if case let .resolver(container as Self) = dictionary[encodeKey(key)] {
             return container
         }
 

@@ -1,17 +1,51 @@
 import Foundation
 
-public final class URLQueryEncoder {
+public final class URLQueryEncoder: Sendable {
 
     public static let `default` = URLQueryEncoder()
 
-    public var dateEncodingStrategy: URLQueryDateEncodingStrategy
-    public var dataEncodingStrategy: URLQueryDataEncodingStrategy
-    public var nonConformingFloatEncodingStrategy: URLQueryNonConformingFloatEncodingStrategy
-    public var boolEncodingStrategy: URLQueryBoolEncodingStrategy
-    public var arrayEncodingStrategy: URLQueryArrayEncodingStrategy
-    public var spaceEncodingStrategy: URLQuerySpaceEncodingStrategy
-    public var keyEncodingStrategy: URLQueryKeyEncodingStrategy
-    public var userInfo: [CodingUserInfoKey: Any]
+    private let optionsMutex: Mutex<URLQueryEncodingOptions>
+    private let userInfoMutex: Mutex<[CodingUserInfoKey: Sendable]>
+
+    public var dateEncodingStrategy: URLQueryDateEncodingStrategy {
+        get { optionsMutex.withLock { $0.dateEncodingStrategy } }
+        set { optionsMutex.withLock { $0.dateEncodingStrategy = newValue } }
+    }
+
+    public var dataEncodingStrategy: URLQueryDataEncodingStrategy {
+        get { optionsMutex.withLock { $0.dataEncodingStrategy } }
+        set { optionsMutex.withLock { $0.dataEncodingStrategy = newValue } }
+    }
+
+    public var nonConformingFloatEncodingStrategy: URLQueryNonConformingFloatEncodingStrategy {
+        get { optionsMutex.withLock { $0.nonConformingFloatEncodingStrategy } }
+        set { optionsMutex.withLock { $0.nonConformingFloatEncodingStrategy = newValue } }
+    }
+
+    public var boolEncodingStrategy: URLQueryBoolEncodingStrategy {
+        get { optionsMutex.withLock { $0.boolEncodingStrategy } }
+        set { optionsMutex.withLock { $0.boolEncodingStrategy = newValue } }
+    }
+
+    public var arrayEncodingStrategy: URLQueryArrayEncodingStrategy {
+        get { optionsMutex.withLock { $0.arrayEncodingStrategy } }
+        set { optionsMutex.withLock { $0.arrayEncodingStrategy = newValue } }
+    }
+
+    public var spaceEncodingStrategy: URLQuerySpaceEncodingStrategy {
+        get { optionsMutex.withLock { $0.spaceEncodingStrategy } }
+        set { optionsMutex.withLock { $0.spaceEncodingStrategy = newValue } }
+    }
+
+    public var keyEncodingStrategy: URLQueryKeyEncodingStrategy {
+        get { optionsMutex.withLock { $0.keyEncodingStrategy } }
+        set { optionsMutex.withLock { $0.keyEncodingStrategy = newValue } }
+    }
+
+    public var userInfo: [CodingUserInfoKey: Sendable] {
+        get { userInfoMutex.withLock { $0 } }
+        set { userInfoMutex.withLock { $0 = newValue } }
+    }
 
     public init(
         dateEncodingStrategy: URLQueryDateEncodingStrategy = .deferredToDate,
@@ -21,19 +55,8 @@ public final class URLQueryEncoder {
         arrayEncodingStrategy: URLQueryArrayEncodingStrategy = .enumerated,
         spaceEncodingStrategy: URLQuerySpaceEncodingStrategy = .percentEscaped,
         keyEncodingStrategy: URLQueryKeyEncodingStrategy = .useDefaultKeys,
-        userInfo: [CodingUserInfoKey: Any] = [:]
+        userInfo: [CodingUserInfoKey: Sendable] = [:]
     ) {
-        self.dateEncodingStrategy = dateEncodingStrategy
-        self.dataEncodingStrategy = dataEncodingStrategy
-        self.nonConformingFloatEncodingStrategy = nonConformingFloatEncodingStrategy
-        self.boolEncodingStrategy = boolEncodingStrategy
-        self.arrayEncodingStrategy = arrayEncodingStrategy
-        self.spaceEncodingStrategy = spaceEncodingStrategy
-        self.keyEncodingStrategy = keyEncodingStrategy
-        self.userInfo = userInfo
-    }
-
-    public func encode<T: Encodable>(_ value: T) throws -> String {
         let options = URLQueryEncodingOptions(
             dateEncodingStrategy: dateEncodingStrategy,
             dataEncodingStrategy: dataEncodingStrategy,
@@ -43,6 +66,13 @@ public final class URLQueryEncoder {
             spaceEncodingStrategy: spaceEncodingStrategy,
             keyEncodingStrategy: keyEncodingStrategy
         )
+
+        self.optionsMutex = Mutex(value: options)
+        self.userInfoMutex = Mutex(value: userInfo)
+    }
+
+    public func encode<T: Encodable>(_ value: T) throws -> String {
+        let options = optionsMutex.withLock { $0 }
 
         let encoder = URLQuerySingleValueEncodingContainer(
             options: options,

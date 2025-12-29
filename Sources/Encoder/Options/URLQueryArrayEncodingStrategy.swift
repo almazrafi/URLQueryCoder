@@ -1,6 +1,6 @@
 import Foundation
 
-public enum URLQueryArrayEncodingStrategy {
+public enum URLQueryArrayEncodingStrategy: Sendable {
 
     case enumerated
     case unenumerated

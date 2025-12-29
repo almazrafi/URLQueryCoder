@@ -1,7 +1,7 @@
 import Foundation
 
 /// The strategies available for formatting dates when decoding them from URL.
-public enum URLQueryDateDecodingStrategy {
+public enum URLQueryDateDecodingStrategy: Sendable {
 
     /// The strategy that uses formatting from the Date structure.
     case deferredToDate
@@ -20,5 +20,5 @@ public enum URLQueryDateDecodingStrategy {
     case formatted(DateFormatter)
 
     /// The strategy that formats custom dates by calling a user-defined function.
-    case custom((_ decoder: Decoder) throws -> Date)
+    case custom(@Sendable (_ decoder: Decoder) throws -> Date)
 }

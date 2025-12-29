@@ -763,7 +763,7 @@ final class URLQueryDecoderTests: XCTestCase, URLQueryDecoderTesting {
             }
 
             override func isEqual(_ object: Any?) -> Bool {
-                guard let object = object as? DecodableSubclass else {
+                guard let object = object as? Self else {
                     return false
                 }
 
@@ -859,7 +859,7 @@ final class URLQueryDecoderTests: XCTestCase, URLQueryDecoderTesting {
     }
 
     func testThatDecoderFailsWhenDecodingInvalidURL() {
-        let url = "invalid url"
+        let url = "//invalid url"
         let query = "foobar=\(url.urlQueryEncoded!)"
 
         assertDecoderFails(decoding: [String: URL].self, from: query) { error in

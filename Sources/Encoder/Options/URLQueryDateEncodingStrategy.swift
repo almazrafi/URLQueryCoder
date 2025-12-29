@@ -1,6 +1,6 @@
 import Foundation
 
-public enum URLQueryDateEncodingStrategy {
+public enum URLQueryDateEncodingStrategy: Sendable {
 
     case deferredToDate
 
@@ -11,5 +11,5 @@ public enum URLQueryDateEncodingStrategy {
     case iso8601
 
     case formatted(DateFormatter)
-    case custom((_ date: Date, _ encoder: Encoder) throws -> Void)
+    case custom(@Sendable (_ date: Date, _ encoder: Encoder) throws -> Void)
 }
