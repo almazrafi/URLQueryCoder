@@ -1,5 +1,5 @@
 # URLQueryCoder
-[![Build Status](https://github.com/almazrafi/URLQueryCoder/workflows/CI/badge.svg?branch=main)](https://github.com/almazrafi/URLQueryCoder/actions)
+[![Build Status](https://github.com/almazrafi/URLQueryCoder/workflows/CI/badge.svg)](https://github.com/almazrafi/URLQueryCoder/actions)
 [![Codecov](https://codecov.io/gh/almazrafi/URLQueryCoder/branch/main/graph/badge.svg?token=DRFk9RWXWB)](https://codecov.io/gh/almazrafi/URLQueryCoder)
 [![Cocoapods](https://img.shields.io/cocoapods/v/URLQueryCoder)](http://cocoapods.org/pods/URLQueryCoder)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-Compatible-brightgreen.svg?style=flat)](https://github.com/Carthage/Carthage)
