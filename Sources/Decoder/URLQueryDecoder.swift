@@ -51,7 +51,7 @@ public final class URLQueryDecoder: Sendable {
     }
 
     public func decode<T: Decodable>(
-        _ type: T.Type,
+        _ type: T.Type = T.self,
         from query: String
     ) throws -> T {
         let options = optionsMutex.withLock { $0 }
@@ -67,5 +67,26 @@ public final class URLQueryDecoder: Sendable {
         )
 
         return try T(from: decoder)
+    }
+
+    @available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+    public func decode<T: DecodableWithConfiguration>(
+        _ type: T.Type = T.self,
+        from query: String,
+        configuration: T.DecodingConfiguration
+    ) throws -> T {
+        let options = optionsMutex.withLock { $0 }
+
+        let deserializer = URLQueryDeserializer()
+        let value = try deserializer.deserialize(query)
+
+        let decoder = URLQuerySingleValueDecodingContainer(
+            value: value,
+            options: options,
+            userInfo: userInfo,
+            codingPath: []
+        )
+
+        return try T(from: decoder, configuration: configuration)
     }
 }
