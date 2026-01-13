@@ -98,4 +98,36 @@ public final class URLQueryEncoder: Sendable {
 
         return serializer.serialize(urlEncodedForm)
     }
+
+    @available(macOS 12, iOS 15, tvOS 15, watchOS 8, *)
+    public func encode<T: EncodableWithConfiguration>(
+        _ value: T,
+        configuration: T.EncodingConfiguration
+    ) throws -> String {
+        let options = optionsMutex.withLock { $0 }
+
+        let encoder = URLQuerySingleValueEncodingContainer(
+            options: options,
+            userInfo: userInfo,
+            codingPath: []
+        )
+
+        try value.encode(to: encoder, configuration: configuration)
+
+        guard case let .dictionary(urlEncodedForm) = encoder.resolveValue() else {
+            let errorContext = EncodingError.Context(
+                codingPath: [],
+                debugDescription: "Root component cannot be encoded in URL"
+            )
+
+            throw EncodingError.invalidValue(value, errorContext)
+        }
+
+        let serializer = URLQuerySerializer(
+            arrayEncodingStrategy: arrayEncodingStrategy,
+            spaceEncodingStrategy: spaceEncodingStrategy
+        )
+
+        return serializer.serialize(urlEncodedForm)
+    }
 }
